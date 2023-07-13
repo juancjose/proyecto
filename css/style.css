@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*
+fuentes
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+*/
+
+/*ENCABEZADO*/
+
+h1{
+    color: white;
+    font-size: 70px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.buscador input{
+    height: 30px;
+    border-radius: 10px;
+}
+
+/*FONDO DE LA PAGINA*/
+
+body {
+    background-image: url("../assets/img/backgroundOK.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.navbar-inside{
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*DETALLE Y PRODUCTOS DEL INICO*/
+
+.subt-index{
+    color: white;
+    font-size: 36px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+}
+
+.cards{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    gap: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card h4{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    gap: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.subcard{
+    border-radius: 10%;
+    background-color: #1C1B1F;
+    padding: 20px;
+    width: 250px;
+}
+.subcard h4{
+    font-size: 20px;
+}
+.subcard p{
+    font-size: 15px;
+}
+/*PRODUCTOS*/
+.productos-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.productos-container h2{
+    color: white;
+}
+.productos-container div{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.productos-container h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.productos-container img{
+    width: 200px;
+    border-radius: 10px;
+}
+/*AYUDA*/
+.ayuda-container h2{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 80px 80px;
+}
+.ayuda-container p{
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px;
+}
+/* CONTACTO */
+.contacto-container{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 70px 80px;
+}
+.contacto-container h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contacto-container input{
+    width: 300px;
+    border-radius: 5px;
+}
+.contacto-container button{
+    width: 240px;
+    background-color: #343238;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+/* NOSOTROS*/
+.nosotros-container{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.nosotros-container h2{
+    text-align: center;
+    margin: 80px 80px;
+}
+.nosotros-container p{
+    text-align: center;
+    margin: 60px;
+}
+.novedades{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.novedades-button{
+    display: flex;
+    justify-content: space-around;
+}
+.nosotros-container button{
+    width: 400px;
+    background-color: #2120224f;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+/*PIE DE PAGINA*/
+.footer-container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.footer-img{
+    display: flex;
+    gap: 15px;
+}
+.footer-container button{
+    width: 240px;
+    background-color: #343238;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
