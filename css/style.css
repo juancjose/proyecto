@@ -4,7 +4,7 @@
 
 
 
-*{
+* {
     margin: 0;
     border: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ font-family: 'Bebas Neue', sans-serif;
 
 /*ENCABEZADO*/
 
-h1{
+h1 {
     color: white;
     font-size: 70px;
     padding: 10px;
@@ -27,11 +27,27 @@ h1{
     justify-content: center;
 }
 
-.logo{
+.logos .logo {
     display: flex;
+    align-items: center;
 }
 
-.buscador input{
+.logos .logo a {
+    margin-right: 10px;
+}
+
+.logos .logo a img {
+    width: 30px;
+    height: 30px;
+}
+
+.logos .logo a:hover img {
+    opacity: 0.7;
+    /* Reduce la opacidad al pasar el cursor por encima */
+}
+
+
+.buscador input {
     height: 30px;
     border-radius: 10px;
 }
@@ -46,18 +62,18 @@ body {
 
 /*BARRA DE NAVEGACION*/
 
-.navbar{
+.navbar {
     list-style: none;
     display: flex;
     gap: 100px;
     align-items: center;
 }
 
-.navbar-inside{
+.navbar-inside {
     list-style: none;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -66,7 +82,7 @@ body {
 
 /*DETALLE Y PRODUCTOS DEL INICO*/
 
-.subt-index{
+.subt-index {
     color: white;
     font-size: 36px;
     padding: 10px;
@@ -77,7 +93,7 @@ body {
     margin-top: 40px;
 }
 
-.cards{
+.cards {
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -90,7 +106,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.card h4{
+.card h4 {
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -101,71 +117,85 @@ body {
     gap: 100px;
     font-family: 'Roboto', sans-serif;
 }
-.subcard{
+
+.subcard {
     border-radius: 10%;
     background-color: #1C1B1F;
     padding: 20px;
     width: 250px;
 }
-.subcard h4{
+
+.subcard h4 {
     font-size: 20px;
 }
-.subcard p{
+
+.subcard p {
     font-size: 15px;
 }
+
 /*PRODUCTOS*/
-.productos-container{
+.productos-container {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Josefin Sans', sans-serif;
 }
-.productos-container h2{
+
+.productos-container h2 {
     color: white;
 }
-.productos-container div{
+
+.productos-container div {
     display: flex;
     flex-direction: column;
     margin: 30px;
 }
-.productos-container h3{
+
+.productos-container h3 {
     color: white;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-.productos-container img{
+
+.productos-container img {
     width: 200px;
     border-radius: 10px;
 }
+
 /*AYUDA*/
-.ayuda-container h2{
+.ayuda-container h2 {
     color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 80px 80px;
 }
-.ayuda-container p{
+
+.ayuda-container p {
     color: white;
     text-align: left;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     margin: 40px;
 }
+
 /* CONTACTO */
-.contacto-container{
+.contacto-container {
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 70px 80px;
 }
-.contacto-container h2{
+
+.contacto-container h2 {
     text-align: center;
     margin-bottom: 50px;
 }
-.contacto-container input{
+
+.contacto-container input {
     width: 300px;
     border-radius: 5px;
 }
-.contacto-container button{
+
+.contacto-container button {
     width: 240px;
     background-color: #343238;
     color: white;
@@ -174,29 +204,35 @@ body {
     cursor: pointer;
     margin-top: 40px;
 }
+
 /* NOSOTROS*/
-.nosotros-container{
+.nosotros-container {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-.nosotros-container h2{
+
+.nosotros-container h2 {
     text-align: center;
     margin: 80px 80px;
 }
-.nosotros-container p{
+
+.nosotros-container p {
     text-align: center;
     margin: 60px;
 }
-.novedades{
+
+.novedades {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.novedades-button{
+
+.novedades-button {
     display: flex;
     justify-content: space-around;
 }
-.nosotros-container button{
+
+.nosotros-container button {
     width: 400px;
     background-color: #2120224f;
     color: white;
@@ -205,17 +241,20 @@ body {
     cursor: pointer;
     font-size: 30px;
 }
+
 /*PIE DE PAGINA*/
-.footer-container{
+.footer-container {
     display: flex;
     margin-top: 100px;
     justify-content: space-around;
 }
-.footer-img{
+
+.footer-img {
     display: flex;
     gap: 15px;
 }
-.footer-container button{
+
+.footer-container button {
     width: 240px;
     background-color: #343238;
     color: white;
