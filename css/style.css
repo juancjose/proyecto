@@ -10,8 +10,7 @@
     box-sizing: border-box;
 }
 
-/*
-fuentes
+/* Fuentes
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Bebas Neue', sans-serif;
 */
@@ -52,7 +51,7 @@ h1 {
     border-radius: 10px;
 }
 
-/*FONDO DE LA PAGINA*/
+/* Fondo de la página */
 
 body {
     background-image: url("../assets/img/backgroundOK.jpg");
@@ -60,7 +59,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/*BARRA DE NAVEGACION*/
+/* Barra de navegación */
 
 .navbar {
     list-style: none;
@@ -253,7 +252,8 @@ body {
     font-size: 30px;
 }
 
-/*PIE DE PAGINA*/
+/* Pie de página */
+
 .footer-container {
     display: flex;
     margin-top: 100px;
