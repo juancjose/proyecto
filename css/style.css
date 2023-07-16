@@ -82,8 +82,8 @@ body {
 .navbar li a:hover {
     color: #fff;
     background-color: #333;
-    border: 2px solid #333; 
-    padding: 8px 12px; 
+    border: 2px solid #333;
+    padding: 8px 12px;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -144,14 +144,25 @@ body {
 }
 
 /*PRODUCTOS*/
+.productos-container h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
 .productos-container {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
 }
 
 .productos-container h2 {
     color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 200px;
 }
 
 .productos-container div {
