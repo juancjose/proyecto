@@ -263,6 +263,48 @@ body {
     font-size: 30px;
 }
 
+/*Sublimacion (implementacion de grid y boostrap)*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.just1,
+.just2,
+.just3,
+.just4,
+.just5,
+.just6 {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.just1 img,
+.just2 img,
+.just3 img,
+.just4 img,
+.just5 img,
+.just6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid .just1 h3,
+.grid .just2 h3,
+.grid .just3 h3,
+.grid .just4 h3,
+.grid .just5 h3,
+.grid .just6 h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
 /* Pie de página */
 
 .footer-container {
