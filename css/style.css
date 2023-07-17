@@ -589,3 +589,52 @@ Requisto para curso
         padding: 6px;
     }
 }
+
+/*media query pagina productos*/
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.productos-container h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 200px;
+}
+
+.productos-container div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.productos-container h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.productos-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* (hasta 767px) */
+@media (max-width: 767px) {
+    .productos-container div {
+        margin: 15px;
+    }
+
+    .productos-container h3 {
+        font-size: 18px;
+    }
+
+    .productos-container img {
+        width: 150px;
+    }
+}
