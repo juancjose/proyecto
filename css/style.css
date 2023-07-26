@@ -45,7 +45,8 @@ body {
   list-style: none;
   display: flex;
   gap: 100px;
-  align-items: center; }
+  align-items: center;
+  margin-top: 21px; }
   .navbar-inside {
     list-style: none; }
   .navbar li a {
@@ -188,7 +189,10 @@ body {
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
-    font-size: 30px; }
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 20px; }
 
 /* Sublimacion (implementacion de grid y boostrap) */
 .grid {
