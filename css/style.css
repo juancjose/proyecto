@@ -163,3 +163,61 @@ body {
     padding: 10px;
     cursor: pointer;
     margin-top: 40px; }
+
+/* NOSOTROS */
+.nosotros-container {
+  color: white;
+  font-family: 'Roboto', sans-serif; }
+  .nosotros-container h2 {
+    text-align: center;
+    margin: 80px 80px; }
+  .nosotros-container p {
+    text-align: center;
+    margin: 60px; }
+  .nosotros-container .novedades {
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    .nosotros-container .novedades .novedades-button {
+      display: flex;
+      justify-content: space-around; }
+  .nosotros-container button {
+    width: 400px;
+    background-color: #2120224f;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 30px; }
+
+/* Sublimacion (implementacion de grid y boostrap) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px; }
+  .grid .just1,
+  .grid .just2,
+  .grid .just3,
+  .grid .just4,
+  .grid .just5,
+  .grid .just6 {
+    border-radius: 5px;
+    overflow: hidden; }
+    .grid .just1 img,
+    .grid .just2 img,
+    .grid .just3 img,
+    .grid .just4 img,
+    .grid .just5 img,
+    .grid .just6 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .grid .just1 h3,
+    .grid .just2 h3,
+    .grid .just3 h3,
+    .grid .just4 h3,
+    .grid .just5 h3,
+    .grid .just6 h3 {
+      color: white;
+      text-align: center;
+      font-family: 'Roboto', sans-serif; }
