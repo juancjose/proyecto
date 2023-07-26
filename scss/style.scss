@@ -11,6 +11,9 @@ font-family: 'Bebas Neue', sans-serif;
 
 $colorfont-title: white;
 $colorfont-navbar: white;
+$colorfont-h2: rgb(255, 255, 255);
+$colorfont-text: white;
+$colorbutton: white;
 
 * {
     margin: 0;
@@ -102,7 +105,7 @@ body {
 /*DETALLE Y PRODUCTOS DEL INICO*/
 
 .subt-index {
-    color: white;
+    color: $colorfont-h2;
     font-size: 36px;
     padding: 10px;
     text-align: center;
@@ -132,7 +135,7 @@ body {
             padding: 0;
             display: flex;
             font-size: 30px;
-            color: white;
+            color: $colorfont-text;
             gap: 100px;
             font-family: 'Roboto', sans-serif;
         }
@@ -157,7 +160,7 @@ body {
 /*PRODUCTOS*/
 .productos-container {
     h2 {
-        color: white;
+        color: $colorfont-h2;
         text-align: center;
         font-family: 'Roboto', sans-serif;
         margin: 0 auto;
@@ -176,7 +179,7 @@ body {
         margin: 30px;
 
         h3 {
-            color: white;
+            color: $colorfont-text;
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
             text-align: center;
@@ -192,14 +195,14 @@ body {
 /*AYUDA*/
 .ayuda-container {
     h2 {
-        color: white;
+        color: $colorfont-h2;
         text-align: center;
         font-family: 'Roboto', sans-serif;
         margin: 80px 80px;
     }
 
     p {
-        color: white;
+        color: $colorfont-text;
         text-align: left;
         margin-bottom: 30px;
         font-family: 'Roboto', sans-serif;
@@ -209,7 +212,7 @@ body {
 
 /* CONTACTO */
 .contacto-container {
-    color: white;
+    color: $colorfont-h2;
     font-family: 'Roboto', sans-serif;
     margin: 70px 80px;
 
@@ -236,7 +239,7 @@ body {
 
 /* NOSOTROS */
 .nosotros-container {
-    color: white;
+    color: $colorfont-h2;
     font-family: 'Roboto', sans-serif;
 
     h2 {
@@ -297,7 +300,7 @@ body {
         }
 
         h3 {
-            color: white;
+            color: $colorfont-text;
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
@@ -586,7 +589,6 @@ body {
 }
 
 .productos-container h2 {
-    color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 200px;
@@ -599,7 +601,7 @@ body {
 }
 
 .productos-container h3 {
-    color: white;
+    color: $colorfont-text;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
