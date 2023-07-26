@@ -129,3 +129,37 @@ body {
     .productos-container div img {
       width: 200px;
       border-radius: 10px; }
+
+/*AYUDA*/
+.ayuda-container h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 80px 80px; }
+
+.ayuda-container p {
+  color: white;
+  text-align: left;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin: 40px; }
+
+/* CONTACTO */
+.contacto-container {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 70px 80px; }
+  .contacto-container h2 {
+    text-align: center;
+    margin-bottom: 50px; }
+  .contacto-container input {
+    width: 300px;
+    border-radius: 5px; }
+  .contacto-container button {
+    width: 240px;
+    background-color: #343238;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 40px; }
