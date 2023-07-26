@@ -298,3 +298,30 @@ body {
     }
 }
 
+
+
+
+
+
+/* Pie de página */
+
+.footer-container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    .footer-img {
+        display: flex;
+        gap: 15px;
+    }
+
+    button {
+        width: 240px;
+        background-color: #343238;
+        color: white;
+        border-radius: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}

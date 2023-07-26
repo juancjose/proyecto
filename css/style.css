@@ -225,3 +225,20 @@ body {
       color: white;
       text-align: center;
       font-family: 'Roboto', sans-serif; }
+
+/* Pie de página */
+.footer-container {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  margin-bottom: 10px; }
+  .footer-container .footer-img {
+    display: flex;
+    gap: 15px; }
+  .footer-container button {
+    width: 240px;
+    background-color: #343238;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer; }
