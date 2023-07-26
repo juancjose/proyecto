@@ -326,3 +326,296 @@ body {
         cursor: pointer;
     }
 }
+
+
+
+
+
+
+
+/* FINAL CODIGO */
+
+/* MEDIA QUERY */
+
+/* (1024px en adelante) */
+/*media query h1 logos navbar en inicio*/
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 70px;
+        padding: 10px;
+    }
+
+    .logos .logo a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar {
+        gap: 100px;
+    }
+}
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 50px;
+        padding: 8px;
+    }
+
+    .logos .logo a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar {
+        gap: 50px;
+    }
+}
+
+/* (hasta 767px a 320px) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+        padding: 6px;
+    }
+
+    .logos .logo a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        padding: 4px;
+    }
+
+    .logos .logo a img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .navbar {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin-bottom: 8px;
+    }
+}
+
+/*media query h2 y cards del inicio*/
+
+/* (1024px en adelante) */
+@media (min-width: 1024px) {
+    .subt-index {
+        font-size: 36px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .cards {
+        font-size: 50px;
+        gap: 100px;
+    }
+
+    .card h4 {
+        font-size: 30px;
+    }
+
+    .subcard {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .subcard h4 {
+        font-size: 20px;
+    }
+
+    .subcard p {
+        font-size: 15px;
+    }
+}
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .subt-index {
+        font-size: 30px;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .cards {
+        font-size: 40px;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card h4 {
+        font-size: 25px;
+    }
+
+    .subcard {
+        width: 200px;
+        padding: 16px;
+    }
+
+    .subcard h4 {
+        font-size: 18px;
+    }
+
+    .subcard p {
+        font-size: 14px;
+    }
+}
+
+/*(hasta 767px a 320px) */
+@media (max-width: 767px) {
+    .subt-index {
+        font-size: 24px;
+        padding: 6px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        font-size: 30px;
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card h4 {
+        font-size: 20px;
+    }
+
+    .subcard {
+        width: 160px;
+        padding: 12px;
+    }
+
+    .subcard h4 {
+        font-size: 16px;
+    }
+
+    .subcard p {
+        font-size: 12px;
+    }
+}
+
+/*media query footer*/
+
+/* (1024px en adelante) */
+@media (min-width: 1024px) {
+    .footer-container {
+        margin-top: 100px;
+    }
+
+    .footer-img {
+        gap: 15px;
+    }
+
+    .footer-container button {
+        width: 240px;
+        padding: 10px;
+    }
+}
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-img {
+        gap: 10px;
+    }
+
+    .footer-container button {
+        width: 200px;
+        padding: 8px;
+    }
+}
+
+/* (hasta 767px) */
+@media (max-width: 767px) {
+    .footer-container {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-img {
+        gap: 8px;
+    }
+
+    .footer-container button {
+        width: 160px;
+        padding: 6px;
+    }
+}
+
+/*media query pagina productos*/
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.productos-container h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 200px;
+}
+
+.productos-container div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.productos-container h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.productos-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* (hasta 767px) */
+@media (max-width: 767px) {
+    .productos-container div {
+        margin: 15px;
+    }
+
+    .productos-container h3 {
+        font-size: 18px;
+    }
+
+    .productos-container img {
+        width: 150px;
+    }
+}
