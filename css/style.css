@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.logos .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logos .logo a {
+    margin-right: 10px;
+}
+
+.logos .logo a img {
+    width: 30px;
+    height: 30px;
+}
+
+.logos .logo a:hover img {
+    opacity: 0.7;
+}
+
+.buscador input {
+    height: 30px;
+    border-radius: 10px;
+}
