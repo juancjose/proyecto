@@ -109,17 +109,20 @@ body {
     font-size: 15px; }
 
 /*PRODUCTOS*/
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto' ,sans-serif; }
+
 .productos-container {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  margin-bottom: 200px;
   display: flex;
-  flex-wrap: wrap;
-  font-family: 'Josefin Sans', sans-serif;
-  justify-content: center; }
-  .productos-container h2 {
-    color: white;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    margin-bottom: 200px; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .productos-container div {
     display: flex;
     flex-direction: column;

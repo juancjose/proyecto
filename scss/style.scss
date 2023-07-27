@@ -11,7 +11,7 @@ font-family: 'Bebas Neue', sans-serif;
 
 $colorfont-title: white;
 $colorfont-navbar: white;
-$colorfont-h2: rgb(255, 255, 255);
+$colorfont-h2: white;
 $colorfont-text: white;
 $colorbutton: white;
 
@@ -158,20 +158,22 @@ body {
 }
 
 /*PRODUCTOS*/
-.productos-container {
-    h2 {
-        color: $colorfont-h2;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        margin: 0 auto;
-        margin-bottom: 200px;
-    }
 
+h2 {
+    color: $colorfont-h2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto' ,sans-serif;
+}
+
+.productos-container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-bottom: 200px;
     display: flex;
-    flex-wrap: wrap;
-    font-family: 'Josefin Sans',
-    sans-serif;
     justify-content: center;
+    flex-wrap: wrap;
 
     div {
         display: flex;
