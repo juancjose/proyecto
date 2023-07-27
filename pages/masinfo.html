@@ -23,6 +23,13 @@
         main {
             padding: 20px;
         }
+        .social-header {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 5px;
+        }
         footer {
             padding: 20px 0;
         }
@@ -62,9 +69,16 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="./masinfo.html">Info</a>
                         </li>
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <button class="btn btn-outline-light" type="submit">Buscar</button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div>
+        </nav>
     </header>
 
     <main>
@@ -77,12 +91,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5>Contacto</h5>
-                    <p><a href="tel:NUMERO_DE_TELEFONO" class="text-white">Teléfono: WhatsApp</a></p>
-                    <p><a href="mailto:graficaespacio@hotmail.com" class="text-white">Email: graficaespacio@hotmail.com</a></p>
+                    <h5 class="social-header">Contacto</h5>
+                    <li class="list-inline-item">
+                        <a href="https://api.whatsapp.com/send?phone=NUMERO_DE_TELEFONO"  target="_blank" class="text-white">
+                            <img src="../assets/img/whatsapp.png" alt="Facebook Logo" class="img-fluid mr-2">
+                        </a>
+                    </li>
+                    <p><a href="mailto:graficaespacio@hotmail.com" class="text-white text-decoration-none">Email: graficaespacio@hotmail.com</a></p>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h5>Redes Sociales</h5>
+                    <h5 class="social-header">Redes Sociales</h5>
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="https://twitter.com/TU_USUARIO_DE_TWITTER" target="_blank" class="text-white">
@@ -107,7 +125,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h5>Dirección</h5>
+                    <h5 class="social-header">Dirección</h5>
                     <p>Sucre, Beccar</p>
                     <p>CP 1643</p>
                 </div>
