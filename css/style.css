@@ -32,9 +32,28 @@ h1 {
     .logos .logo a:hover img {
       opacity: 0.7; }
 
-.buscador input {
-  height: 30px;
-  border-radius: 10px; }
+.buscador {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 300px; }
+  .buscador input[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px 30px 8px 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    border-radius: 30px; }
+  .buscador .lupa {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: -35px;
+    cursor: pointer; }
+    .buscador .lupa img {
+      filter: invert(1); }
 
 /* Fondo de la página */
 body {
@@ -113,7 +132,7 @@ h2 {
   color: white;
   text-align: center;
   margin-top: 20px;
-  font-family: 'Roboto' ,sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .productos-container {
   text-align: center;
@@ -434,3 +453,16 @@ h2 {
     font-size: 18px; }
   .productos-container img {
     width: 150px; } }
+
+/* buscador */
+@media screen and (max-width: 1024px) {
+  .buscador {
+    width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  .buscador {
+    width: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .buscador {
+    width: 100%; } }
