@@ -1,9 +1,8 @@
 # Imprenta Gráfica Espacio
 
-
 ## Descripción
 
-Grafica espacio es una empresa especializada en servicios de impresión de alta calidad. Ofrecemos una amplia gama de servicios de impresión, incluyendo impresión offset, impresión digital, impresión de gran formato y más.
+Gráfica Espacio es una empresa especializada en servicios de impresión de alta calidad. Ofrecemos una amplia gama de servicios de impresión, incluyendo impresión offset, impresión digital, impresión de gran formato y más.
 
 ## Servicios
 

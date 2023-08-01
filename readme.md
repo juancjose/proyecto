@@ -1,30 +1,29 @@
-# Imprenta Gr谩fica Espacio
+# Imprenta Gr醘ica Espacio
 
+## Descripci髇
 
-## Descripci贸n
-
-Grafica espacio es una empresa especializada en servicios de impresi贸n de alta calidad. Ofrecemos una amplia gama de servicios de impresi贸n, incluyendo impresi贸n offset, impresi贸n digital, impresi贸n de gran formato y m谩s.
+Gr醘ica Espacio es una empresa especializada en servicios de impresi髇 de alta calidad. Ofrecemos una amplia gama de servicios de impresi髇, incluyendo impresi髇 offset, impresi髇 digital, impresi髇 de gran formato y m醩.
 
 ## Servicios
 
-- Impresi贸n Offset: Ofrecemos impresi贸n offset para proyectos de alta calidad y grandes cantidades, con resultados n铆tidos y precisos.
+- Impresi髇 Offset: Ofrecemos impresi髇 offset para proyectos de alta calidad y grandes cantidades, con resultados n韙idos y precisos.
 
-- Impresi贸n Digital: Nuestra impresi贸n digital es perfecta para proyectos de menor cantidad y plazos de entrega m谩s cortos, sin comprometer la calidad.
+- Impresi髇 Digital: Nuestra impresi髇 digital es perfecta para proyectos de menor cantidad y plazos de entrega m醩 cortos, sin comprometer la calidad.
 
-- Impresi贸n de Gran Formato: Para proyectos que requieren impresiones a gran escala, ofrecemos impresi贸n de gran formato con colores vibrantes y duraderos.
+- Impresi髇 de Gran Formato: Para proyectos que requieren impresiones a gran escala, ofrecemos impresi髇 de gran formato con colores vibrantes y duraderos.
 
-- Dise帽o Gr谩fico: Contamos con un equipo de dise帽adores gr谩ficos talentosos que pueden ayudarte a crear dise帽os impactantes para tus proyectos de impresi贸n.
+- Dise駉 Gr醘ico: Contamos con un equipo de dise馻dores gr醘icos talentosos que pueden ayudarte a crear dise駉s impactantes para tus proyectos de impresi髇.
 
-## C贸mo Solicitar un Presupuesto
+## C髆o Solicitar un Presupuesto
 
 1. Visita nuestro sitio web en https://iridescent-dasik-21987e.netlify.app/index.html
 
-2. Completa el formulario de solicitud de presupuesto proporcionando detalles sobre tu proyecto de impresi贸n.
+2. Completa el formulario de solicitud de presupuesto proporcionando detalles sobre tu proyecto de impresi髇.
 
-3. Recibir谩s un presupuesto personalizado en un plazo de 24 horas.
+3. Recibir醩 un presupuesto personalizado en un plazo de 24 horas.
 
 ## Contacto
 
-- Tel茅fono: +54 9 11 3312-2743
-- Correo electr贸nico: graficaespacio@hotmail.com
-- Direcci贸n: Sucre, Beccar. San Isidro
+- Tel閒ono: +54 9 11 3312-2743
+- Correo electr髇ico: graficaespacio@hotmail.com
+- Direcci髇: Sucre, Beccar. San Isidro
