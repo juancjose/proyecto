@@ -174,24 +174,62 @@ h2 {
   margin: 40px; }
 
 /* CONTACTO */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px; }
+
 .contacto-container {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  margin: 70px 80px; }
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif; }
   .contacto-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: #fff;
     text-align: center;
-    margin-bottom: 50px; }
-  .contacto-container input {
-    width: 300px;
-    border-radius: 5px; }
-  .contacto-container button {
-    width: 240px;
-    background-color: #343238;
-    color: white;
-    border-radius: 30px;
-    padding: 10px;
+    letter-spacing: 5px; }
+  .contacto-container h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .contacto-container h4.contacto-subtitle {
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+      color: white; }
+  .contacto-container .contacto-form .contacto-form__field {
+    margin-bottom: 15px; }
+    .contacto-container .contacto-form .contacto-form__field .contacto-form__label {
+      display: block;
+      font-size: 16px;
+      font-weight: bold; }
+    .contacto-container .contacto-form .contacto-form__field .contacto-form__input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000; }
+    .contacto-container .contacto-form .contacto-form__field .contacto-form__textarea {
+      resize: vertical;
+      min-height: 100px; }
+  .contacto-container .contacto-form .contacto-form__button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 40px; }
+    transition: background-color 0.3s ease; }
+    .contacto-container .contacto-form .contacto-form__button:hover {
+      background-color: #0056b3; }
 
 /* NOSOTROS */
 .nosotros-container {
@@ -470,3 +508,59 @@ h2 {
 @media screen and (max-width: 576px) {
   .buscador {
     width: 100%; } }
+
+/* ---------------------------------CONTACTO MEDIA QUERY---------------------------------------*/
+/* Media Query para dispositivos de 1024px o más */
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 40px; }
+  h4.contacto-subtitle {
+    font-size: 38px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 18px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 18px; }
+  .contacto-form .contacto-form__button {
+    font-size: 20px; } }
+
+/* Media Query para dispositivos de hasta 768px de ancho */
+/* Media Query para dispositivos de hasta 768px de ancho */
+@media (max-width: 768px) {
+  .contacto-container {
+    padding: 10px; }
+  h2 {
+    font-size: 30px; }
+  h4.contacto-subtitle {
+    font-size: 28px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 14px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 14px; }
+  .contacto-form__button {
+    font-size: 16px; } }
+
+/* Media Query para dispositivos de hasta 480px de ancho */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 26px; }
+  h4.contacto-subtitle {
+    font-size: 24px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 12px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 12px; }
+  .contacto-form .contacto-form__button {
+    font-size: 14px; } }
+
+/* Media Query para dispositivos de hasta 320px de ancho */
+@media (max-width: 320px) {
+  h2 {
+    font-size: 22px; }
+  h4.contacto-subtitle {
+    font-size: 20px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 10px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 10px; }
+  .contacto-form .contacto-form__button {
+    font-size: 12px; } }

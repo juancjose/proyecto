@@ -55,26 +55,29 @@
             <h2>CONTACTO</h2>
             <h4>
                 ¿Tenés dudas sobre algún producto en particular?
-                Completá el formulario y un asesor de Grafica Espacio se contactará con vos.
             </h4>
-            <div>
-                <h4>Nombre (requerido)</h4>
-                <input type="text">
-            </div>
-            <div>
-                <h4>Tu correo electronico (requerido)</h4>
-                <input type="text">
-            </div>
-            <div>
-                <h4>Telefono (requerido)</h4>
-                <input type="text">
-            </div>
-            <div>
-                <h4>Envianos tu consulta</h4>
-                <input type="text">
-            </div>
-            <button>ENVIAR CONSULTA</button>
-
+            <h4 class="contacto-subtitle">
+                Completá el formulario y un asesor de Grafica Espacio se contactará contigo
+            </h4>
+            <form class="contacto-form" action="/enviar_formulario_contacto.php" method="POST">
+                <div class="contacto-form__field">
+                    <label class="contacto-form__label" for="nombre">Nombre (requerido)</label>
+                    <input class="contacto-form__input" type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="contacto-form__field">
+                    <label class="contacto-form__label" for="correo">Tu correo electrónico (requerido)</label>
+                    <input class="contacto-form__input" type="text" id="correo" name="correo" required>
+                </div>
+                <div class="contacto-form__field">
+                    <label class="contacto-form__label" for="telefono">Teléfono (requerido)</label>
+                    <input class="contacto-form__input" type="text" id="telefono" name="telefono" required>
+                </div>
+                <div class="contacto-form__field">
+                    <label class="contacto-form__label" for="consulta">Envianos tu consulta</label>
+                    <input class="contacto-form__input" type="text" id="consulta" name="consulta" required>
+                </div>
+                <button class="contacto-form__button" type="submit">ENVIAR CONSULTA</button>
+            </form>
         </section>
     </main>
     <footer>
