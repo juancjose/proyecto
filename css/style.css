@@ -335,7 +335,8 @@ h2 {
     width: 30px;
     height: 30px; }
   .navbar {
-    gap: 100px; } }
+    gap: 10px;
+    justify-content: space-between; } }
 
 /* (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -346,7 +347,12 @@ h2 {
     width: 25px;
     height: 25px; }
   .navbar {
-    gap: 50px; } }
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  li {
+    flex-basis: 50%;
+    text-align: center; } }
 
 /* (hasta 767px a 320px) */
 @media (max-width: 767px) {
@@ -357,9 +363,13 @@ h2 {
     width: 20px;
     height: 20px; }
   .navbar {
-    gap: 30px;
+    gap: 0;
+    padding: 5px;
     flex-wrap: wrap;
     justify-content: center; }
+  li {
+    flex-basis: 100%;
+    text-align: center; }
   .navbar li {
     margin-bottom: 10px; } }
 
