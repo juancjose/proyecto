@@ -194,13 +194,15 @@ h2 {
   padding: 20px; }
 
 .contacto-container {
+  max-width: 1000px;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: 'Roboto', sans-serif; }
   .contacto-container h2 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
     padding: 10px 20px;
     color: #fff;
