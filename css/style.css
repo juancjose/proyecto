@@ -567,7 +567,6 @@ h2 {
     font-size: 20px; } }
 
 /* Media Query para dispositivos de hasta 768px de ancho */
-/* Media Query para dispositivos de hasta 768px de ancho */
 @media (max-width: 768px) {
   .contacto-container {
     padding: 10px; }
