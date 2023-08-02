@@ -540,102 +540,121 @@ h2 {
 
     /*media query h2 y cards del inicio*/
 
-    /* (1024px en adelante) */
-    @media (min-width: 1024px) {
-        .subt-index {
-            font-size: 36px;
-            padding: 10px;
-            margin-top: 40px;
-        }
+/* (1024px en adelante) */
+@media (min-width: 1024px) {
+    .subt-index {
+        font-size: 36px;
+        padding: 10px;
+        margin-top: 40px;
+    }
 
-        .cards {
-            font-size: 50px;
-            gap: 100px;
-        }
+    .cards {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        gap: 60px;
+        font-family: 'Roboto', sans-serif;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
 
-        .card h4 {
-            font-size: 30px;
-        }
+    .card {
+        text-decoration: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: 30px;
+        color: $colorfont-text;
+        gap: 20px;
+        font-family: 'Roboto', sans-serif;
+        flex-direction: column;
+        align-items: center;
 
         .subcard {
-            width: 250px;
+            flex: 1;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
-        }
 
-        .subcard h4 {
-            font-size: 20px;
-        }
+            h4 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
 
-        .subcard p {
-            font-size: 15px;
+            p {
+                font-size: 15px;
+                margin: 0;
+            }
         }
     }
+}
 
-    /* (768px a 1023px) */
-    @media (min-width: 768px) and (max-width: 1023px) {
-        .subt-index {
-            font-size: 30px;
-            padding: 8px;
-            margin-top: 30px;
-        }
-
-        .cards {
-            font-size: 40px;
-            gap: 80px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card h4 {
-            font-size: 25px;
-        }
-
-        .subcard {
-            width: 200px;
-            padding: 16px;
-        }
-
-        .subcard h4 {
-            font-size: 18px;
-        }
-
-        .subcard p {
-            font-size: 14px;
-        }
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .subt-index {
+        font-size: 30px;
+        padding: 8px;
+        margin-top: 30px;
     }
 
-    /*(hasta 767px a 320px) */
-    @media (max-width: 767px) {
-        .subt-index {
-            font-size: 24px;
-            padding: 6px;
-            margin-top: 20px;
-        }
-
-        .cards {
-            font-size: 30px;
-            gap: 60px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card h4 {
-            font-size: 20px;
-        }
-
-        .subcard {
-            width: 160px;
-            padding: 12px;
-        }
-
-        .subcard h4 {
-            font-size: 16px;
-        }
-
-        .subcard p {
-            font-size: 12px;
-        }
+    .cards {
+        font-size: 40px;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
+    .card h4 {
+        font-size: 25px;
+    }
+
+    .subcard {
+        width: 200px;
+        padding: 16px;
+    }
+
+    .subcard h4 {
+        font-size: 18px;
+    }
+
+    .subcard p {
+        font-size: 14px;
+    }
+}
+
+/* (320px a 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .subt-index {
+        font-size: 24px;
+        padding: 6px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        font-size: 30px;
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card h4 {
+        font-size: 20px;
+    }
+
+    .subcard {
+        width: 160px;
+        padding: 12px;
+    }
+
+    .subcard h4 {
+        font-size: 16px;
+    }
+
+    .subcard p {
+        font-size: 12px;
+    }
+}
 
     /*media query footer*/
 
