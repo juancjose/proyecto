@@ -217,35 +217,41 @@ h2 {
       text-align: center;
       font-weight: bold;
       color: white; }
-  .contacto-container .contacto-form .contacto-form__field {
+  .contacto-container .contacto-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; }
+  .contacto-container .contacto-form__field {
     margin-bottom: 15px; }
-    .contacto-container .contacto-form .contacto-form__field .contacto-form__label {
-      display: block;
-      font-size: 16px;
-      font-weight: bold; }
-    .contacto-container .contacto-form .contacto-form__field .contacto-form__input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #fff;
-      color: #000; }
-    .contacto-container .contacto-form .contacto-form__field .contacto-form__textarea {
-      resize: vertical;
-      min-height: 100px; }
-  .contacto-container .contacto-form .contacto-form__button {
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: gray;
-    color: #fff;
-    border: none;
+  .contacto-container .contacto-form__label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold; }
+  .contacto-container .contacto-form__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; }
-    .contacto-container .contacto-form .contacto-form__button:hover {
-      background-color: #292929; }
+    background-color: #fff;
+    color: #000; }
+  .contacto-container .contacto-form__textarea {
+    resize: vertical;
+    min-height: 100px; }
+
+.contacto-form__button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; }
+  .contacto-form__button:hover {
+    background-color: #292929; }
 
 /* NOSOTROS */
 .nosotros-container {
