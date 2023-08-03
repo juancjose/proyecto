@@ -34,18 +34,18 @@ h1 {
 .logos .logo {
   display: flex;
   align-items: center; }
-
-.logos .logo a {
-  margin-right: 5px;
-  position: relative; }
-
-.logos .logo img {
-  margin-top: 10px;
-  margin-left: 10px;
-  transition: transform 0.3s ease; }
-
-.logos .logo img:hover {
-  transform: scale(1.1); }
+  .logos .logo a {
+    margin-right: 5px;
+    position: relative; }
+    .logos .logo a img {
+      margin-top: 10px;
+      margin-left: 10px;
+      transition: transform 0.3s ease; }
+      .logos .logo a img.acceso, .logos .logo a img.mg, .logos .logo a img.carrito {
+        width: 24px;
+        height: 24px; }
+      .logos .logo a img:hover {
+        transform: scale(1.1); }
 
 .buscador {
   display: flex;

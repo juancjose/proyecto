@@ -45,26 +45,35 @@ h1 {
     }
 }
 
-.logos .logo {
-    display: flex;
-    align-items: center;
-}
+.logos {
+    .logo {
+        display: flex;
+        align-items: center;
 
-.logos .logo a {
-    margin-right: 5px;
-    position: relative;
-}
+        a {
+            margin-right: 5px;
+            position: relative;
 
-.logos .logo img {
-    margin-top: 10px;
-    margin-left: 10px;
-    transition: transform 0.3s ease;
-}
+            img {
 
-.logos .logo img:hover {
-    transform: scale(1.1);
-}
+                &.acceso,
+                &.mg,
+                &.carrito {
+                    width: 24px;
+                    height: 24px;
+                }
 
+                margin-top: 10px;
+                margin-left: 10px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
 
 .buscador {
     display: flex;
@@ -299,48 +308,49 @@ h2 {
         margin: 0 auto;
         padding: 20px;
     }
+
     .contacto-form__field {
         margin-bottom: 15px;
     }
 
-            .contacto-form__label {
-                display: block;
-                font-size: 16px;
-                font-weight: bold;
-            }
+    .contacto-form__label {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+    }
 
-            .contacto-form__input {
-                width: 100%;
-                padding: 10px;
-                font-size: 16px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                background-color: #fff;
-                color: #000;
-            }
+    .contacto-form__input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #000;
+    }
 
-            .contacto-form__textarea {
-                resize: vertical;
-                min-height: 100px;
-            }
-        }
+    .contacto-form__textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+}
 
-        .contacto-form__button {
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: gray;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 0 auto;
+.contacto-form__button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
 
-            &:hover {
-                background-color: rgb(41, 41, 41);
-            }
-        }
+    &:hover {
+        background-color: rgb(41, 41, 41);
+    }
+}
 
 /* NOSOTROS */
 .nosotros-container {
@@ -424,7 +434,7 @@ h2 {
     margin-top: 100px;
     justify-content: space-around;
     margin-bottom: 10px;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 25px;
 
     .footer-img {
@@ -432,13 +442,13 @@ h2 {
         gap: 15px;
     }
 
-.footer-img img {
-    transition: transform 0.3s ease;
-}
+    .footer-img img {
+        transition: transform 0.3s ease;
+    }
 
-.footer-img img:hover {
-    transform: scale(1.2);
-}
+    .footer-img img:hover {
+        transform: scale(1.2);
+    }
 
     button {
         width: 240px;
@@ -497,63 +507,65 @@ h2 {
         flex-wrap: wrap;
         justify-content: center;
     }
-        li {
-            flex-basis: 50%;
-            text-align: center;
-        }
+
+    li {
+        flex-basis: 50%;
+        text-align: center;
+    }
+}
+
+/* (hasta 767px a 320px) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+        padding: 6px;
     }
 
-    /* (hasta 767px a 320px) */
-    @media (max-width: 767px) {
-        h1 {
-            font-size: 36px;
-            padding: 6px;
-        }
-
-        .logos .logo a img {
-            width: 20px;
-            height: 20px;
-        }
-
-        .navbar {
-            gap: 0;
-            padding: 5px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-            li {
-                flex-basis: 100%;
-                text-align: center;
-        }
-
-        .navbar li {
-            margin-bottom: 10px;
-        }
+    .logos .logo a img {
+        width: 20px;
+        height: 20px;
     }
 
-    @media (max-width: 767px) {
-        h1 {
-            font-size: 24px;
-            padding: 4px;
-        }
-
-        .logos .logo a img {
-            width: 15px;
-            height: 15px;
-        }
-
-        .navbar {
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .navbar li {
-            margin-bottom: 8px;
-        }
+    .navbar {
+        gap: 0;
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    /*media query h2 y cards del inicio*/
+    li {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        padding: 4px;
+    }
+
+    .logos .logo a img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .navbar {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin-bottom: 8px;
+    }
+}
+
+/*media query h2 y cards del inicio*/
 
 /* (1024px en adelante) */
 @media (min-width: 1024px) {
@@ -671,233 +683,233 @@ h2 {
     }
 }
 
-    /*media query footer*/
+/*media query footer*/
 
-    /* (1024px en adelante) */
-    @media (min-width: 1024px) {
-        .footer-container {
-            margin-top: 100px;
-        }
-
-        .footer-img {
-            gap: 15px;
-        }
-
-        .footer-container button {
-            width: 240px;
-            padding: 10px;
-        }
+/* (1024px en adelante) */
+@media (min-width: 1024px) {
+    .footer-container {
+        margin-top: 100px;
     }
 
-    /* (768px a 1023px) */
-    @media (min-width: 768px) and (max-width: 1023px) {
-        .footer-container {
-            margin-top: 80px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer-img {
-            gap: 10px;
-        }
-
-        .footer-container button {
-            width: 200px;
-            padding: 8px;
-        }
+    .footer-img {
+        gap: 15px;
     }
 
-    /* (hasta 767px) */
-    @media (max-width: 767px) {
-        .footer-container {
-            margin-top: 60px;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-img {
-            gap: 8px;
-        }
-
-        .footer-container button {
-            width: 160px;
-            padding: 6px;
-        }
+    .footer-container button {
+        width: 240px;
+        padding: 10px;
     }
+}
 
-    /*media query pagina productos*/
-
-    .productos-container {
-        display: flex;
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        margin-top: 80px;
         flex-wrap: wrap;
-        font-family: 'Josefin Sans', sans-serif;
         justify-content: center;
     }
 
-    .productos-container h2 {
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        margin-bottom: 200px;
+    .footer-img {
+        gap: 10px;
     }
 
-    .productos-container div {
-        display: flex;
+    .footer-container button {
+        width: 200px;
+        padding: 8px;
+    }
+}
+
+/* (hasta 767px) */
+@media (max-width: 767px) {
+    .footer-container {
+        margin-top: 60px;
         flex-direction: column;
-        margin: 30px;
+        align-items: center;
+    }
+
+    .footer-img {
+        gap: 8px;
+    }
+
+    .footer-container button {
+        width: 160px;
+        padding: 6px;
+    }
+}
+
+/*media query pagina productos*/
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.productos-container h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 200px;
+}
+
+.productos-container div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.productos-container h3 {
+    color: $colorfont-text;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.productos-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* (hasta 767px) */
+@media (max-width: 767px) {
+    .productos-container div {
+        margin: 15px;
     }
 
     .productos-container h3 {
-        color: $colorfont-text;
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
+        font-size: 18px;
     }
 
     .productos-container img {
-        width: 200px;
-        border-radius: 10px;
+        width: 150px;
+    }
+}
+
+/* buscador lupa */
+@media screen and (max-width: 1024px) {
+    .buscador {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .buscador {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .buscador {
+        width: 100%;
+    }
+}
+
+/* ---------------------------------CONTACTO MEDIA QUERY---------------------------------------*/
+
+/* Media Query para dispositivos de 1024px o más */
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 40px;
     }
 
-    /* (hasta 767px) */
-    @media (max-width: 767px) {
-        .productos-container div {
-            margin: 15px;
-        }
-
-        .productos-container h3 {
-            font-size: 18px;
-        }
-
-        .productos-container img {
-            width: 150px;
-        }
+    h4.contacto-subtitle {
+        font-size: 38px;
     }
 
-    /* buscador lupa */
-    @media screen and (max-width: 1024px) {
-        .buscador {
-            width: 90%;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        .buscador {
-            width: 100%;
-        }
-    }
-
-    @media screen and (max-width: 576px) {
-        .buscador {
-            width: 100%;
-        }
-    }
-
-    /* ---------------------------------CONTACTO MEDIA QUERY---------------------------------------*/
-
-    /* Media Query para dispositivos de 1024px o más */
-    @media (min-width: 1024px) {
-        h2 {
-            font-size: 40px;
-        }
-
-        h4.contacto-subtitle {
-            font-size: 38px;
-        }
-
-        .contacto-form {
-            .contacto-form__field {
-                .contacto-form__label {
-                    font-size: 18px;
-                }
-
-                .contacto-form__input {
-                    font-size: 18px;
-                }
+    .contacto-form {
+        .contacto-form__field {
+            .contacto-form__label {
+                font-size: 18px;
             }
 
-            .contacto-form__button {
-                font-size: 20px;
+            .contacto-form__input {
+                font-size: 18px;
             }
-        }
-    }
-
-    /* Media Query para dispositivos de hasta 768px de ancho */
-    @media (max-width: 768px) {
-        .contacto-container {
-            padding: 10px;
-        }
-
-        h2 {
-            font-size: 30px;
-        }
-
-        h4.contacto-subtitle {
-            font-size: 28px;
-        }
-
-        .contacto-form .contacto-form__field .contacto-form__label {
-            font-size: 14px;
-        }
-
-        .contacto-form .contacto-form__field .contacto-form__input {
-            font-size: 14px;
         }
 
         .contacto-form__button {
-            font-size: 16px;
-        }
-    }
-
-    /* Media Query para dispositivos de hasta 480px de ancho */
-    @media (max-width: 480px) {
-        h2 {
-            font-size: 26px;
-        }
-
-        h4.contacto-subtitle {
-            font-size: 24px;
-        }
-
-        .contacto-form {
-            .contacto-form__field {
-                .contacto-form__label {
-                    font-size: 12px;
-                }
-
-                .contacto-form__input {
-                    font-size: 12px;
-                }
-            }
-
-            .contacto-form__button {
-                font-size: 14px;
-            }
-        }
-    }
-
-    /* Media Query para dispositivos de hasta 320px de ancho */
-    @media (max-width: 320px) {
-        h2 {
-            font-size: 22px;
-        }
-
-        h4.contacto-subtitle {
             font-size: 20px;
         }
+    }
+}
 
-        .contacto-form {
-            .contacto-form__field {
-                .contacto-form__label {
-                    font-size: 10px;
-                }
+/* Media Query para dispositivos de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .contacto-container {
+        padding: 10px;
+    }
 
-                .contacto-form__input {
-                    font-size: 10px;
-                }
+    h2 {
+        font-size: 30px;
+    }
+
+    h4.contacto-subtitle {
+        font-size: 28px;
+    }
+
+    .contacto-form .contacto-form__field .contacto-form__label {
+        font-size: 14px;
+    }
+
+    .contacto-form .contacto-form__field .contacto-form__input {
+        font-size: 14px;
+    }
+
+    .contacto-form__button {
+        font-size: 16px;
+    }
+}
+
+/* Media Query para dispositivos de hasta 480px de ancho */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    h4.contacto-subtitle {
+        font-size: 24px;
+    }
+
+    .contacto-form {
+        .contacto-form__field {
+            .contacto-form__label {
+                font-size: 12px;
             }
 
-            .contacto-form__button {
+            .contacto-form__input {
                 font-size: 12px;
             }
         }
+
+        .contacto-form__button {
+            font-size: 14px;
+        }
     }
+}
+
+/* Media Query para dispositivos de hasta 320px de ancho */
+@media (max-width: 320px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    h4.contacto-subtitle {
+        font-size: 20px;
+    }
+
+    .contacto-form {
+        .contacto-form__field {
+            .contacto-form__label {
+                font-size: 10px;
+            }
+
+            .contacto-form__input {
+                font-size: 10px;
+            }
+        }
+
+        .contacto-form__button {
+            font-size: 12px;
+        }
+    }
+}
