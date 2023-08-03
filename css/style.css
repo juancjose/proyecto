@@ -34,14 +34,18 @@ h1 {
 .logos .logo {
   display: flex;
   align-items: center; }
-  .logos .logo a {
-    margin-right: 10px; }
-    .logos .logo a img {
-      width: 30px;
-      height: 30px;
-      margin-top: 10px; }
-    .logos .logo a:hover img {
-      opacity: 0.7; }
+
+.logos .logo a {
+  margin-right: 5px;
+  position: relative; }
+
+.logos .logo img {
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: transform 0.3s ease; }
+
+.logos .logo img:hover {
+  transform: scale(1.1); }
 
 .buscador {
   display: flex;
@@ -319,10 +323,16 @@ h2 {
   display: flex;
   margin-top: 100px;
   justify-content: space-around;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px; }
   .footer-container .footer-img {
     display: flex;
     gap: 15px; }
+  .footer-container .footer-img img {
+    transition: transform 0.3s ease; }
+  .footer-container .footer-img img:hover {
+    transform: scale(1.2); }
   .footer-container button {
     width: 240px;
     background-color: #343238;
