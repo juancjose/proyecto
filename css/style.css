@@ -328,7 +328,8 @@ h2 {
   padding: 25px; }
   .footer-container .footer-img {
     display: flex;
-    gap: 15px; }
+    gap: 15px;
+    align-items: center; }
   .footer-container .footer-img img {
     transition: transform 0.3s ease; }
   .footer-container .footer-img img:hover {
