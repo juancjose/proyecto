@@ -122,37 +122,42 @@ body {
 
 /* Barra de navegación */
 
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrar la .navbar en el contenedor */
+}
+
 .navbar {
     list-style: none;
     display: flex;
-    gap: 100px;
     align-items: center;
     margin-top: 18px;
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px;
+    max-width: 1200px;
+}
 
-    &-inside {
-        list-style: none;
-    }
+.navbar-inside {
+    list-style: none;
+}
 
-    li {
-        a {
-            text-decoration: none;
-            color: $colorfont-navbar;
-            font-size: 18px;
-            font-family: 'Montserrat', sans-serif;
+li {
+    margin-right: 50px;
+}
 
-            &:hover {
-                color: #fff;
-                background-color: #333;
-                border: 2px solid #333;
-                padding: 8px 12px;
-                border-radius: 4px;
-                transition: all 0.3s ease-in-out;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-        }
+li a {
+    text-decoration: none;
+    color: $colorfont-navbar;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+    &:hover {
+        color: #fff;
+        background-color: #333;
+        border: 2px solid #333;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 }
 

@@ -82,30 +82,38 @@ body {
   background-attachment: fixed; }
 
 /* Barra de navegación */
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Centrar la .navbar en el contenedor */ }
+
 .navbar {
   list-style: none;
   display: flex;
-  gap: 100px;
   align-items: center;
   margin-top: 18px;
-  width: 100%;
-  justify-content: space-between;
-  padding: 10px; }
-  .navbar-inside {
-    list-style: none; }
-  .navbar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif; }
-    .navbar li a:hover {
-      color: #fff;
-      background-color: #333;
-      border: 2px solid #333;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+  max-width: 1200px; }
+
+.navbar-inside {
+  list-style: none; }
+
+li {
+  margin-right: 50px; }
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif; }
+  li a:hover {
+    color: #fff;
+    background-color: #333;
+    border: 2px solid #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
 /*DETALLE Y PRODUCTOS DEL INICO*/
 .subt-index {
