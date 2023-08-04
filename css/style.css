@@ -54,6 +54,7 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+/* Barra de navegación */
 .buscador {
   display: flex;
   align-items: center;
@@ -81,7 +82,6 @@ body {
     .buscador .lupa img {
       filter: invert(1); }
 
-/* Barra de navegación */
 .navbar-container {
   width: 100%;
   display: flex;
