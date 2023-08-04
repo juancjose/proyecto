@@ -75,6 +75,15 @@ h1 {
     }
 }
 
+/* Fondo de la página */
+
+body {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(135deg, #FF3CAC 0%, #FFBB3C 50%, #2B86C5 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .buscador {
     display: flex;
     align-items: center;
@@ -109,15 +118,6 @@ h1 {
             filter: invert(1);
         }
     }
-}
-
-/* Fondo de la página */
-
-body {
-    background-color: #FF3CAC;
-    background-image: linear-gradient(135deg, #FF3CAC 0%, #FFBB3C 50%, #2B86C5 100%);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 /* Barra de navegación */
