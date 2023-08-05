@@ -653,3 +653,48 @@ h2 {
     font-size: 10px; }
   .contacto-form .contacto-form__button {
     font-size: 12px; } }
+
+/* Ajustes para pantallas con un ancho de 1024px o menos */
+@media screen and (max-width: 1024px) {
+  .nosotros-container {
+    padding: 10px; }
+  .nosotros-container h2 {
+    margin: 10px; }
+  .nosotros-container p {
+    margin: 10px; }
+  .nosotros-container .novedades button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 24px; } }
+
+/* Ajustes para pantallas con un ancho de 768px o menos */
+@media screen and (max-width: 768px) {
+  .nosotros-container h2 {
+    font-size: 28px; }
+  .nosotros-container p {
+    font-size: 24px; }
+  .nosotros-container .novedades button {
+    font-size: 24px; } }
+
+/* Ajustes para pantallas con un ancho de 480px o menos */
+@media screen and (max-width: 480px) {
+  .nosotros-container h2 {
+    font-size: 24px; }
+  .nosotros-container p {
+    font-size: 22px; }
+  .nosotros-container .novedades button {
+    font-size: 22px; } }
+
+/* Ajustes para pantallas con un ancho de 320px o menos */
+@media screen and (max-width: 320px) {
+  .nosotros-container h2 {
+    font-size: 22px;
+    margin: 10px 5px; }
+  .nosotros-container p {
+    font-size: 20px;
+    margin: 10px 5px; }
+  .nosotros-container button {
+    width: 200px;
+    font-size: 20px;
+    padding: 10px; } }
