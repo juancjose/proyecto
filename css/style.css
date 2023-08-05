@@ -87,6 +87,7 @@ body {
   display: flex;
   justify-content: center; }
   .navbar-container .navbar {
+    width: 100%;
     list-style: none;
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@ body {
     .navbar-container .navbar .navbar-inside {
       list-style: none; }
     .navbar-container .navbar li {
-      margin-right: 50px; }
+      margin-right: auto; }
       .navbar-container .navbar li a {
         text-decoration: none;
         color: white;
