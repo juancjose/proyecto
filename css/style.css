@@ -42,8 +42,8 @@ h1 {
       margin-left: 10px;
       transition: transform 0.3s ease; }
       .logos .logo a img.acceso, .logos .logo a img.mg, .logos .logo a img.carrito {
-        width: 24px;
-        height: 24px; }
+        width: 28px;
+        height: 28px; }
       .logos .logo a img:hover {
         transform: scale(1.1); }
 
@@ -299,7 +299,7 @@ h2 {
     margin: auto;
     margin-top: 20px; }
 
-/* Sublimacion (implementacion de grid y boostrap) */
+/* Sublimacion (implementacion de grid) */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -679,7 +679,7 @@ h2 {
     font-size: 24px; }
   .nosotros-container button {
     font-size: 24px;
-    width: auto; } }
+    width: autos; } }
 
 /* Ajustes para pantallas con un ancho de 480px o menos */
 @media screen and (max-width: 480px) {
