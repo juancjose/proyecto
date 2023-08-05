@@ -401,7 +401,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center; }
   li {
-    flex-basis: 50%;
+    flex-basis: 100%;
     text-align: center; } }
 
 /* (hasta 767px a 320px) */
