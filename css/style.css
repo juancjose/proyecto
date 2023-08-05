@@ -374,7 +374,7 @@ h2 {
 /* MEDIA QUERY */
 /* (1024px en adelante) */
 /*media query h1 logos navbar en inicio*/
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 70px;
     padding: 10px; }
@@ -382,8 +382,10 @@ h2 {
     width: 30px;
     height: 30px; }
   .navbar {
-    gap: 10px;
-    justify-content: space-between; } }
+    gap: 5px;
+    justify-content: space-between; }
+  .navbar-container .navbar {
+    flex-wrap: wrap; } }
 
 /* (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {

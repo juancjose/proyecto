@@ -517,7 +517,7 @@ h2 {
 /* (1024px en adelante) */
 /*media query h1 logos navbar en inicio*/
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 70px;
         padding: 10px;
@@ -529,8 +529,12 @@ h2 {
     }
 
     .navbar {
-        gap: 10px;
+        gap: 5px;
         justify-content: space-between;
+    }
+
+    .navbar-container .navbar{
+        flex-wrap: wrap;
     }
 }
 
