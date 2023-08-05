@@ -677,8 +677,9 @@ h2 {
     font-size: 28px; }
   .nosotros-container p {
     font-size: 24px; }
-  .nosotros-container .novedades button {
-    font-size: 24px; } }
+  .nosotros-container button {
+    font-size: 24px;
+    width: auto; } }
 
 /* Ajustes para pantallas con un ancho de 480px o menos */
 @media screen and (max-width: 480px) {
@@ -686,8 +687,10 @@ h2 {
     font-size: 24px; }
   .nosotros-container p {
     font-size: 22px; }
-  .nosotros-container .novedades button {
-    font-size: 22px; } }
+  .nosotros-container button {
+    width: auto;
+    font-size: 18px;
+    padding: 10px; } }
 
 /* Ajustes para pantallas con un ancho de 320px o menos */
 @media screen and (max-width: 320px) {

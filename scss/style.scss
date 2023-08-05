@@ -998,8 +998,9 @@ h2 {
         font-size: 24px;
     }
     
-    .nosotros-container .novedades button {
+    .nosotros-container button {
         font-size: 24px;
+        width: auto;
     }
 }
 
@@ -1013,8 +1014,10 @@ h2 {
         font-size: 22px;
     }
     
-    .nosotros-container .novedades button {
-        font-size: 22px;
+    .nosotros-container button {
+        width: auto;
+        font-size: 18px;
+        padding: 10px;
     }
 }
 
