@@ -369,7 +369,16 @@ p {
     .grid .just6 img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease; }
+    .grid .just1 img:hover,
+    .grid .just2 img:hover,
+    .grid .just3 img:hover,
+    .grid .just4 img:hover,
+    .grid .just5 img:hover,
+    .grid .just6 img:hover {
+      transform: scale(1.1); }
     .grid .just1 h3,
     .grid .just2 h3,
     .grid .just3 h3,
@@ -378,7 +387,23 @@ p {
     .grid .just6 h3 {
       color: white;
       text-align: center;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      margin-bottom: 30px; }
+      .grid .just1 h3:hover,
+      .grid .just2 h3:hover,
+      .grid .just3 h3:hover,
+      .grid .just4 h3:hover,
+      .grid .just5 h3:hover,
+      .grid .just6 h3:hover {
+        background-color: black;
+        border-color: white; }
 
 /* Pie de página */
 .footer-container {
