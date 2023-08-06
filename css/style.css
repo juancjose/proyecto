@@ -24,13 +24,17 @@ h1 {
   letter-spacing: 2px;
   line-height: 1.2;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.774);
   opacity: 0;
-  animation: fadeIn 1s forwards; }
+  animation: fadeInAndScale 1s forwards; }
 
-@keyframes fadeIn {
+@keyframes fadeInAndScale {
+  from {
+    opacity: 0;
+    transform: scale(0.5); }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    transform: scale(1); } }
 
 .logos .logo {
   display: flex;
@@ -189,7 +193,6 @@ body {
 
 .productos-container {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   margin-bottom: 100px;
   display: flex;
@@ -201,9 +204,18 @@ body {
     margin: 30px; }
     .productos-container div h3 {
       color: white;
-      font-size: 20px;
-      font-family: 'Roboto', sans-serif;
-      text-align: center; }
+      font-size: 24px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      padding: 10px;
+      background-color: #0000006e;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; }
+      .productos-container div h3:hover {
+        background-color: #6200b363;
+        transform: scale(1.05); }
     .productos-container div img {
       width: 200px;
       border-radius: 10px; }
@@ -390,7 +402,7 @@ p {
       font-family: 'Montserrat', sans-serif;
       font-size: 24px;
       padding: 15px;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.559);
       color: #fff;
       border: 2px solid transparent;
       border-radius: 5px;
@@ -430,7 +442,7 @@ p {
       font-size: 24px;
       font-family: 'Montserrat', sans-serif;
       padding: 8px 12px;
-      border: 2px solid #333;
+      border: 2px solid #010101;
       border-radius: 4px;
       transition: all 0.3s ease-in-out;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -439,8 +451,8 @@ p {
       gap: 10px; }
       .footer-container .footer-button a:hover {
         color: #fff;
-        background-color: #333;
-        transform: scale(1.3); }
+        background-color: #00000093;
+        transform: scale(1.1); }
     .footer-container .footer-button .button-icon img {
       width: 32px;
       filter: invert(1); }
@@ -623,33 +635,7 @@ p {
     width: 160px;
     padding: 6px; } }
 
-/*media query pagina productos*/
-.productos-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Josefin Sans', sans-serif;
-  justify-content: center; }
-
-.productos-container h2 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 200px; }
-
-.productos-container div {
-  display: flex;
-  flex-direction: column;
-  margin: 30px; }
-
-.productos-container h3 {
-  color: white;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  text-align: center; }
-
-.productos-container img {
-  width: 200px;
-  border-radius: 10px; }
-
+/*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
 /* (hasta 767px) */
 @media (max-width: 767px) {
   .productos-container div {
