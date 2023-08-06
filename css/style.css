@@ -87,6 +87,9 @@ body {
     .buscador .lupa img {
       filter: invert(1); }
 
+.abrir-menu {
+  display: none; }
+
 .navbar-container {
   width: 100%;
   display: flex;
