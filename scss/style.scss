@@ -359,14 +359,14 @@ body {
 
 
     h4 {
-        font-size: 24px;
+        font-size: 32px;
         margin-bottom: 20px;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
 
         &.contacto-subtitle {
-            font-size: 36px;
+            font-size: 24px;
             text-align: center;
-            font-weight: bold;
             color: rgb(255, 255, 255);
         }
     }
@@ -405,18 +405,22 @@ body {
 
 .contacto-form__button {
     padding: 10px 100px;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.197);
     color: #fff;
     border: none;
     border-radius: 5px;
+    border: 2px solid #010101;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
     margin: 0 auto;
 
     &:hover {
-        background-color: rgb(41, 41, 41);
+        color: #fff;
+        background-color: #00000093;
+        transform: scale(1.03);
     }
 }
 
