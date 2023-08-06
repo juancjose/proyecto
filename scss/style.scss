@@ -7,6 +7,7 @@
 /* Fuentes
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
 */
 
 /* VARIABLES */
@@ -231,11 +232,23 @@ body {
 
 /*PRODUCTOS*/
 
-h2 {
+.subt-productos {
     color: $colorfont-h2;
     text-align: center;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .productos-container {
@@ -267,12 +280,16 @@ h2 {
 }
 
 /*AYUDA*/
+
 .ayuda-container {
     h2 {
         color: $colorfont-h2;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
-        margin: 80px 80px;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        animation: fadeIn 1s forwards;
     }
 
     p {
@@ -373,24 +390,31 @@ h2 {
 }
 
 /* NOSOTROS */
-.nosotros-container {
-    color: $colorfont-h2;
-    font-family: 'Roboto', sans-serif;
-
-    h2 {
+.nosotros-container h2 {
+        color: $colorfont-h2;
         text-align: center;
-        margin: 80px 80px;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        animation: fadeIn 1s forwards;
     }
 
     p {
         text-align: center;
         margin: 60px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: $colorfont-text;
+        font-size: 24px;
     }
 
     .novedades {
         text-align: center;
         display: flex;
         flex-direction: column;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 24px;
+        color: $colorfont-text;
 
         .novedades-button {
             display: flex;
@@ -410,7 +434,7 @@ h2 {
         margin: auto;
         margin-top: 20px;
     }
-}
+
 
 /* Sublimacion (implementacion de grid) */
 
