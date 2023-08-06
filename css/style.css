@@ -124,12 +124,19 @@ body {
 /*DETALLE Y PRODUCTOS DEL INICO*/
 .subt-index {
   color: white;
-  font-size: 24px;
-  padding: 10px;
   text-align: center;
+  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 40px; }
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .cards {
   display: flex;
@@ -171,7 +178,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  animation: fadeIn 1s forwards; }
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
 
 @keyframes fadeIn {
   from {
@@ -183,7 +191,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
@@ -208,7 +216,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  animation: fadeIn 1s forwards; }
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
 
 .ayuda-container p {
   color: white;
@@ -218,6 +227,16 @@ body {
   margin: 40px; }
 
 /* CONTACTO */
+.subt-contac {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -230,14 +249,8 @@ body {
   color: #fff;
   padding: 20px;
   border-radius: 15px;
-  font-family: 'Roboto', sans-serif; }
-  .contacto-container h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 5px; }
+  font-family: 'Roboto', sans-serif;
+  margin-top: 60px; }
   .contacto-container h4 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -270,7 +283,7 @@ body {
     min-height: 100px; }
 
 .contacto-form__button {
-  padding: 10px 20px;
+  padding: 10px 100px;
   font-size: 18px;
   font-weight: bold;
   background-color: gray;
@@ -291,7 +304,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  animation: fadeIn 1s forwards; }
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
 
 p {
   text-align: center;
@@ -307,11 +321,11 @@ p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24px;
   color: white; }
-  .novedades .novedades-button {
+  .novedades .novedades .button-subs {
     display: flex;
     justify-content: space-around; }
 
-button {
+.button-subs {
   width: 400px;
   background-color: #2120224f;
   color: white;
@@ -324,10 +338,21 @@ button {
   margin-top: 20px; }
 
 /* Sublimacion (implementacion de grid) */
+.subt-subli {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  margin-top: 40px; }
   .grid .just1,
   .grid .just2,
   .grid .just3,
@@ -398,7 +423,7 @@ button {
 /* FINAL CODIGO */
 /* MEDIA QUERY */
 /* (1024px en adelante) */
-/*media query h1 logos navbar en inicio*/
+/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 @media (max-width: 1024px) {
   h1 {
     font-size: 70px;
@@ -461,13 +486,9 @@ button {
   .navbar li {
     margin-bottom: 8px; } }
 
-/*media query h2 y cards del inicio*/
+/*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
 /* (1024px en adelante) */
 @media (min-width: 1024px) {
-  .subt-index {
-    font-size: 36px;
-    padding: 10px;
-    margin-top: 40px; }
   .cards {
     display: flex;
     justify-content: center;
@@ -542,7 +563,7 @@ button {
   .subcard p {
     font-size: 12px; } }
 
-/*media query footer*/
+/*------------------------------------------media query footer------------------------------------------*/
 /* (1024px en adelante) */
 @media (min-width: 1024px) {
   .footer-container {
@@ -626,10 +647,10 @@ button {
   .buscador {
     width: 100%; } }
 
-/* ---------------------------------CONTACTO MEDIA QUERY---------------------------------------*/
+/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
 /* Media Query para dispositivos de 1024px o más */
 @media (min-width: 1024px) {
-  h2 {
+  .subt-contac {
     font-size: 40px; }
   h4.contacto-subtitle {
     font-size: 38px; }
@@ -638,13 +659,13 @@ button {
   .contacto-form .contacto-form__field .contacto-form__input {
     font-size: 18px; }
   .contacto-form .contacto-form__button {
-    font-size: 20px; } }
+    font-size: 18px; } }
 
 /* Media Query para dispositivos de hasta 768px de ancho */
 @media (max-width: 768px) {
   .contacto-container {
     padding: 10px; }
-  h2 {
+  .subt-contac {
     font-size: 30px; }
   h4.contacto-subtitle {
     font-size: 28px; }
@@ -657,7 +678,7 @@ button {
 
 /* Media Query para dispositivos de hasta 480px de ancho */
 @media (max-width: 480px) {
-  h2 {
+  .subt-contac {
     font-size: 26px; }
   h4.contacto-subtitle {
     font-size: 24px; }
@@ -670,23 +691,27 @@ button {
 
 /* Media Query para dispositivos de hasta 320px de ancho */
 @media (max-width: 320px) {
-  h2 {
-    font-size: 22px; }
+  .subt-contac {
+    font-size: 24px; }
   h4.contacto-subtitle {
-    font-size: 20px; }
+    font-size: 12px; }
   .contacto-form .contacto-form__field .contacto-form__label {
     font-size: 10px; }
   .contacto-form .contacto-form__field .contacto-form__input {
     font-size: 10px; }
   .contacto-form .contacto-form__button {
-    font-size: 12px; } }
+    font-size: 12px;
+    padding: 10px;
+    margin: auto;
+    align-items: center; } }
 
 /* Ajustes para pantallas con un ancho de 1024px o menos */
 @media screen and (max-width: 1024px) {
   .nosotros-container {
     padding: 10px; }
   .nosotros-container h2 {
-    margin: 10px; }
+    margin: 10px;
+    font-size: 26px; }
   .nosotros-container p {
     margin: 10px; }
   .nosotros-container .novedades button {

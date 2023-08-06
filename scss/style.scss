@@ -181,12 +181,22 @@ body {
 
 .subt-index {
     color: $colorfont-h2;
-    font-size: 24px;
-    padding: 10px;
     text-align: center;
+    margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 40px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-size: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .cards {
@@ -240,6 +250,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     animation: fadeIn 1s forwards;
+    font-size: 40px;
 }
 
 @keyframes fadeIn {
@@ -255,7 +266,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -290,6 +301,7 @@ body {
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0;
         animation: fadeIn 1s forwards;
+        font-size: 40px;
     }
 
     p {
@@ -302,6 +314,17 @@ body {
 }
 
 /* CONTACTO */
+
+.subt-contac {
+    color: $colorfont-h2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-size: 40px;
+}
 
 .container {
     max-width: 960px;
@@ -317,15 +340,8 @@ body {
     padding: 20px;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
 
-    h2 {
-        font-size: 48px;
-        margin-bottom: 20px;
-        padding: 10px 20px;
-        color: #fff;
-        text-align: center;
-        letter-spacing: 5px;
-    }
 
     h4 {
         font-size: 24px;
@@ -373,7 +389,7 @@ body {
 }
 
 .contacto-form__button {
-    padding: 10px 20px;
+    padding: 10px 100px;
     font-size: 18px;
     font-weight: bold;
     background-color: gray;
@@ -398,6 +414,7 @@ body {
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0;
         animation: fadeIn 1s forwards;
+        font-size: 40px;
     }
 
     p {
@@ -416,13 +433,13 @@ body {
         font-size: 24px;
         color: $colorfont-text;
 
-        .novedades-button {
+        .novedades .button-subs {
             display: flex;
             justify-content: space-around;
         }
     }
 
-    button {
+    .button-subs {
         width: 400px;
         background-color: #2120224f;
         color: white;
@@ -438,10 +455,22 @@ body {
 
 /* Sublimacion (implementacion de grid) */
 
+.subt-subli {
+    color: $colorfont-h2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-size: 40px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
+    margin-top: 40px;
 
     .just1,
     .just2,
@@ -540,7 +569,7 @@ body {
 /* MEDIA QUERY */
 
 /* (1024px en adelante) */
-/*media query h1 logos navbar en inicio*/
+/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 
 @media (max-width: 1024px) {
     h1 {
@@ -638,16 +667,10 @@ body {
     }
 }
 
-/*media query h2 y cards del inicio*/
+/*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
 
 /* (1024px en adelante) */
 @media (min-width: 1024px) {
-    .subt-index {
-        font-size: 36px;
-        padding: 10px;
-        margin-top: 40px;
-    }
-
     .cards {
         display: flex;
         justify-content: center;
@@ -756,7 +779,7 @@ body {
     }
 }
 
-/*media query footer*/
+/*------------------------------------------media query footer------------------------------------------*/
 
 /* (1024px en adelante) */
 @media (min-width: 1024px) {
@@ -877,11 +900,11 @@ body {
     }
 }
 
-/* ---------------------------------CONTACTO MEDIA QUERY---------------------------------------*/
+/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
 
 /* Media Query para dispositivos de 1024px o más */
 @media (min-width: 1024px) {
-    h2 {
+    .subt-contac {
         font-size: 40px;
     }
 
@@ -901,7 +924,7 @@ body {
         }
 
         .contacto-form__button {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 }
@@ -912,7 +935,7 @@ body {
         padding: 10px;
     }
 
-    h2 {
+    .subt-contac {
         font-size: 30px;
     }
 
@@ -935,7 +958,7 @@ body {
 
 /* Media Query para dispositivos de hasta 480px de ancho */
 @media (max-width: 480px) {
-    h2 {
+    .subt-contac {
         font-size: 26px;
     }
 
@@ -962,12 +985,12 @@ body {
 
 /* Media Query para dispositivos de hasta 320px de ancho */
 @media (max-width: 320px) {
-    h2 {
-        font-size: 22px;
+    .subt-contac {
+        font-size: 24px;
     }
 
     h4.contacto-subtitle {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .contacto-form {
@@ -983,12 +1006,15 @@ body {
 
         .contacto-form__button {
             font-size: 12px;
+            padding: 10px;
+            margin: auto;
+            align-items: center;
         }
     }
 }
 
 
-//--------------NOSOTROS MEDIA QUERY---------//
+//--------------------------------------------------------NOSOTROS MEDIA QUERY-----------------------------------------------------------------//
 
 /* Ajustes para pantallas con un ancho de 1024px o menos */
 @media screen and (max-width: 1024px) {
@@ -998,6 +1024,7 @@ body {
 
     .nosotros-container h2 {
         margin: 10px;
+        font-size: 26px;
     }
 
     .nosotros-container p {
