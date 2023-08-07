@@ -59,6 +59,42 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+/* -------------------------------------------------------- CARRUSEL --------------------------------------------------------*/
+#content-item-carrusel {
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 20px; }
+  #content-item-carrusel .item-carrusel {
+    height: 100%;
+    position: relative; }
+    #content-item-carrusel .item-carrusel .tarjeta-carrusel {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #content-item-carrusel .item-carrusel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #content-item-carrusel .item-carrusel .flechas-carrusel {
+      background-color: #0000004d;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px; }
+      #content-item-carrusel .item-carrusel .flechas-carrusel a {
+        display: block;
+        text-decoration: none; }
+      #content-item-carrusel .item-carrusel .flechas-carrusel i {
+        display: block; }
+        #content-item-carrusel .item-carrusel .flechas-carrusel i img {
+          max-width: 20px;
+          max-height: 20px; }
+
 /* Barra de navegación */
 .buscador {
   display: flex;
