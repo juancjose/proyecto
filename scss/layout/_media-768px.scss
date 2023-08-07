@@ -1,0 +1,139 @@
+/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 50px;
+        padding: 8px;
+    }
+
+    .logos .logo a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+/*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
+
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .subt-index {
+        font-size: 30px;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .cards {
+        font-size: 40px;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card h4 {
+        font-size: 25px;
+    }
+
+    .subcard {
+        width: 200px;
+        padding: 16px;
+    }
+
+    .subcard h4 {
+        font-size: 18px;
+    }
+
+    .subcard p {
+        font-size: 14px;
+    }
+}
+
+
+/*------------------------------------------media query footer------------------------------------------*/
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+/*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
+
+/* (hasta 767px) */
+@media (max-width: 767px) {
+    .productos-container div {
+        margin: 15px;
+    }
+
+    .productos-container h3 {
+        font-size: 18px;
+    }
+
+    .productos-container img {
+        width: 150px;
+    }
+}
+
+/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
+
+/* Media Query para dispositivos de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .contacto-container {
+        padding: 10px;
+    }
+
+    .subt-contac {
+        font-size: 30px;
+    }
+
+    h4.contacto-subtitle {
+        font-size: 28px;
+    }
+
+    .contacto-form .contacto-form__field .contacto-form__label {
+        font-size: 14px;
+    }
+
+    .contacto-form .contacto-form__field .contacto-form__input {
+        font-size: 14px;
+    }
+
+    .contacto-form__button {
+        font-size: 16px;
+    }
+}
+
+//--------------------------------------------------------NOSOTROS MEDIA QUERY-----------------------------------------------------------------//
+
+/* Ajustes para pantallas con un ancho de 768px o menos */
+@media screen and (max-width: 768px) {
+    .nosotros-container h2 {
+        font-size: 28px;
+    }
+
+    .nosotros-container p {
+        font-size: 24px;
+    }
+
+    .nosotros-container button {
+        font-size: 24px;
+        width: autos;
+    }
+}
+

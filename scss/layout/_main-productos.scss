@@ -1,0 +1,60 @@
+/*PRODUCTOS*/
+
+.subt-productos {
+    color: $colorfont-h2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-size: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.productos-container {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        h3 {
+            color: $colorfont-text;
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding: 10px;
+            background-color: #0000006e;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                background-color: #6200b363;
+                transform: scale(1.05);
+            }
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
+
+/* (hasta 767px a 320px) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+        padding: 6px;
+    }
+
+    .logos .logo a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar {
+        gap: 0;
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        padding: 4px;
+    }
+
+    .logos .logo a img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .navbar {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin-bottom: 8px;
+    }
+}
+
+
+/*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
+
+/* (320px a 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .subt-index {
+        font-size: 24px;
+        padding: 6px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        font-size: 30px;
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card h4 {
+        font-size: 20px;
+    }
+
+    .subcard {
+        width: 160px;
+        padding: 12px;
+    }
+
+    .subcard h4 {
+        font-size: 16px;
+    }
+
+    .subcard p {
+        font-size: 12px;
+    }
+}
+

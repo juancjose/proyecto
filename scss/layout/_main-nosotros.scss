@@ -1,0 +1,47 @@
+/* HTML - NOSOTROS */
+
+.nosotros-container .subt-nosotros {
+    color: $colorfont-h2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    margin: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $colorfont-text;
+    font-size: 24px;
+}
+
+.novedades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    color: $colorfont-text;
+
+    .novedades .button-subs {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.button-subs {
+    width: 400px;
+    background-color: #2120224f;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}

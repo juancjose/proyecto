@@ -1,0 +1,137 @@
+/* MEDIA QUERY 1024PX */
+
+/*------------------------media query h1 logos navbar en inicio---------------------------------------*/
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 70px;
+        padding: 10px;
+    }
+
+    .logos .logo a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar {
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .navbar-container .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+/*---------------------------media query h2 y cards del inicio--------------------------------------------*/
+
+@media (min-width: 1024px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        text-decoration: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: 30px;
+        color: $colorfont-text;
+        gap: 20px;
+        font-family: 'Roboto', sans-serif;
+        flex-direction: column;
+        align-items: center;
+
+        .subcard {
+            flex: 1;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+
+            h4 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+/*------------------------------------------media query footer------------------------------------------*/
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-img {
+        gap: 100px;
+    }
+
+    .footer-container button {
+        width: 20px;
+        padding: 8px;
+    }
+}
+
+
+/* --------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
+
+@media (min-width: 1024px) {
+    .subt-contac {
+        font-size: 40px;
+    }
+
+    h4.contacto-subtitle {
+        font-size: 38px;
+    }
+
+    .contacto-form {
+        .contacto-form__field {
+            .contacto-form__label {
+                font-size: 18px;
+            }
+
+            .contacto-form__input {
+                font-size: 18px;
+            }
+        }
+
+        .contacto-form__button {
+            font-size: 18px;
+        }
+    }
+}
+
+
+//----------------------------------NOSOTROS MEDIA QUERY----------------------------------------------------//
+
+@media screen and (min-width: 1024px) {
+    .nosotros-container {
+        padding: 10px;
+    }
+
+    .nosotros-container h2 {
+        margin: 10px;
+    }
+
+    .nosotros-container p {
+        margin: 10px;
+    }
+
+    .nosotros-container .novedades button {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        font-size: 24px;
+    }
+}
+

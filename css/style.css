@@ -1,19 +1,107 @@
 @charset "UTF-8";
+/* VARIABLES */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-/* Fuentes
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
-/* VARIABLES */
 * {
   margin: 0;
-  border: 0;
+  padding: 0;
   box-sizing: border-box; }
+
+/* -------------------------------------------------------- CARRUSEL --------------------------------------------------------*/
+#content-item-carrusel {
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 20px; }
+  #content-item-carrusel .item-carrusel {
+    height: 100%;
+    position: relative; }
+    #content-item-carrusel .item-carrusel .tarjeta-carrusel {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #content-item-carrusel .item-carrusel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #content-item-carrusel .item-carrusel .flechas-carrusel {
+      background-color: #0000004d;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px; }
+      #content-item-carrusel .item-carrusel .flechas-carrusel a {
+        display: block;
+        text-decoration: none; }
+      #content-item-carrusel .item-carrusel .flechas-carrusel i {
+        display: block; }
+        #content-item-carrusel .item-carrusel .flechas-carrusel i img {
+          max-width: 20px;
+          max-height: 20px; }
+
+/*DETALLE Y PRODUCTOS DEL INICO*/
+.subt-index {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px; }
+  .cards .card {
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; }
+    .cards .card .img-inicio {
+      transition: box-shadow 0.3s ease-in-out;
+      animation: twinklingBorder 3s linear infinite; }
+
+@keyframes twinklingBorder {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); } }
+    .cards .card .subcard {
+      flex: 1;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px; }
+      .cards .card .subcard h4 {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .cards .card .subcard p {
+        font-size: 15px;
+        margin: 0; }
 
 h1 {
   color: white;
@@ -51,49 +139,6 @@ h1 {
         height: 28px; }
       .logos .logo a img:hover {
         transform: scale(1.1); }
-
-/* Fondo de la página */
-body {
-  background-color: #000000;
-  background-image: linear-gradient(135deg, #FF3CAC 0%, #FFBB3C 50%, #2B86C5 100%);
-  background-size: cover;
-  background-attachment: fixed; }
-
-/* -------------------------------------------------------- CARRUSEL --------------------------------------------------------*/
-#content-item-carrusel {
-  height: 50vh;
-  overflow: hidden;
-  margin-top: 20px; }
-  #content-item-carrusel .item-carrusel {
-    height: 100%;
-    position: relative; }
-    #content-item-carrusel .item-carrusel .tarjeta-carrusel {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    #content-item-carrusel .item-carrusel img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    #content-item-carrusel .item-carrusel .flechas-carrusel {
-      background-color: #0000004d;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px; }
-      #content-item-carrusel .item-carrusel .flechas-carrusel a {
-        display: block;
-        text-decoration: none; }
-      #content-item-carrusel .item-carrusel .flechas-carrusel i {
-        display: block; }
-        #content-item-carrusel .item-carrusel .flechas-carrusel i img {
-          max-width: 20px;
-          max-height: 20px; }
 
 /* Barra de navegación */
 .buscador {
@@ -164,63 +209,6 @@ body {
           .navbar-container .navbar li a:hover::before {
             transform: scaleX(1); }
 
-/*DETALLE Y PRODUCTOS DEL INICO*/
-.subt-index {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  padding: 20px; }
-  .cards .card {
-    text-decoration: none;
-    list-style: none;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    color: white;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center; }
-    .cards .card .img-inicio {
-      transition: box-shadow 0.3s ease-in-out;
-      animation: twinklingBorder 3s linear infinite; }
-
-@keyframes twinklingBorder {
-  0% {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
-  50% {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
-  100% {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); } }
-    .cards .card .subcard {
-      flex: 1;
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px; }
-      .cards .card .subcard h4 {
-        font-size: 20px;
-        margin-bottom: 10px; }
-      .cards .card .subcard p {
-        font-size: 15px;
-        margin: 0; }
-
 /*PRODUCTOS*/
 .subt-productos {
   color: white;
@@ -267,7 +255,7 @@ body {
       width: 200px;
       border-radius: 10px; }
 
-/*AYUDA*/
+/*HTML - AYUDA*/
 .ayuda-container h2 {
   color: white;
   text-align: center;
@@ -285,7 +273,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 40px; }
 
-/* CONTACTO */
+/* HTML - CONTACTO */
 .subt-contac {
   color: white;
   text-align: center;
@@ -359,48 +347,7 @@ body {
     background-color: #00000093;
     transform: scale(1.03); }
 
-/* NOSOTROS */
-.nosotros-container h2 {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
-p {
-  text-align: center;
-  margin: 60px;
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size: 24px; }
-
-.novedades {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  color: white; }
-  .novedades .novedades .button-subs {
-    display: flex;
-    justify-content: space-around; }
-
-.button-subs {
-  width: 400px;
-  background-color: #2120224f;
-  color: white;
-  border-radius: 10px;
-  padding: 20px;
-  cursor: pointer;
-  font-size: 30px;
-  display: block;
-  margin: auto;
-  margin-top: 20px; }
-
-/* Sublimacion (implementacion de grid) */
+/* HTML - SUBLIMACION */
 .subt-subli {
   color: white;
   text-align: center;
@@ -468,7 +415,7 @@ p {
         background-color: black;
         border-color: white; }
 
-/* Pie de página */
+/* PIE DE PAGINA - FOOTER */
 .footer-container {
   display: flex;
   margin-top: 100px;
@@ -508,11 +455,57 @@ p {
       width: 32px;
       filter: invert(1); }
 
-/* FINAL CODIGO */
-/* MEDIA QUERY */
-/* (1024px en adelante) */
-/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
-@media (max-width: 1024px) {
+/* Fondo de la página */
+body {
+  background-color: #000000;
+  background-image: linear-gradient(135deg, #FF3CAC 0%, #FFBB3C 50%, #2B86C5 100%);
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* HTML - NOSOTROS */
+.nosotros-container .subt-nosotros {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  font-size: 40px; }
+
+p {
+  text-align: center;
+  margin: 60px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 24px; }
+
+.novedades {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  color: white; }
+  .novedades .novedades .button-subs {
+    display: flex;
+    justify-content: space-around; }
+
+.button-subs {
+  width: 400px;
+  background-color: #2120224f;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  display: block;
+  margin: auto;
+  margin-top: 20px; }
+
+/* MEDIA QUERY 1024PX */
+/*------------------------media query h1 logos navbar en inicio---------------------------------------*/
+@media (min-width: 1024px) {
   h1 {
     font-size: 70px;
     padding: 10px; }
@@ -525,6 +518,74 @@ p {
   .navbar-container .navbar {
     flex-wrap: wrap; } }
 
+/*---------------------------media query h2 y cards del inicio--------------------------------------------*/
+@media (min-width: 1024px) {
+  .cards {
+    flex-wrap: wrap; }
+  .card {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    align-items: center; }
+    .card .subcard {
+      flex: 1;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px; }
+      .card .subcard h4 {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .card .subcard p {
+        font-size: 15px;
+        margin: 0; } }
+
+/*------------------------------------------media query footer------------------------------------------*/
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .footer-img {
+    gap: 100px; }
+  .footer-container button {
+    width: 20px;
+    padding: 8px; } }
+
+/* --------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
+@media (min-width: 1024px) {
+  .subt-contac {
+    font-size: 40px; }
+  h4.contacto-subtitle {
+    font-size: 38px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 18px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 18px; }
+  .contacto-form .contacto-form__button {
+    font-size: 18px; } }
+
+@media screen and (min-width: 1024px) {
+  .nosotros-container {
+    padding: 10px; }
+  .nosotros-container h2 {
+    margin: 10px; }
+  .nosotros-container p {
+    margin: 10px; }
+  .nosotros-container .novedades button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 24px; } }
+
+/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 /* (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   h1 {
@@ -541,6 +602,74 @@ p {
     flex-basis: 100%;
     text-align: center; } }
 
+/*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .subt-index {
+    font-size: 30px;
+    padding: 8px;
+    margin-top: 30px; }
+  .cards {
+    font-size: 40px;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .card h4 {
+    font-size: 25px; }
+  .subcard {
+    width: 200px;
+    padding: 16px; }
+  .subcard h4 {
+    font-size: 18px; }
+  .subcard p {
+    font-size: 14px; } }
+
+/*------------------------------------------media query footer------------------------------------------*/
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; } }
+
+/*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
+/* (hasta 767px) */
+@media (max-width: 767px) {
+  .productos-container div {
+    margin: 15px; }
+  .productos-container h3 {
+    font-size: 18px; }
+  .productos-container img {
+    width: 150px; } }
+
+/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
+/* Media Query para dispositivos de hasta 768px de ancho */
+@media (max-width: 768px) {
+  .contacto-container {
+    padding: 10px; }
+  .subt-contac {
+    font-size: 30px; }
+  h4.contacto-subtitle {
+    font-size: 28px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 14px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 14px; }
+  .contacto-form__button {
+    font-size: 16px; } }
+
+/* Ajustes para pantallas con un ancho de 768px o menos */
+@media screen and (max-width: 768px) {
+  .nosotros-container h2 {
+    font-size: 28px; }
+  .nosotros-container p {
+    font-size: 24px; }
+  .nosotros-container button {
+    font-size: 24px;
+    width: autos; } }
+
+/*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 /* (hasta 767px a 320px) */
 @media (max-width: 767px) {
   h1 {
@@ -575,55 +704,6 @@ p {
     margin-bottom: 8px; } }
 
 /*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
-/* (1024px en adelante) */
-@media (min-width: 1024px) {
-  .cards {
-    flex-wrap: wrap; }
-  .card {
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    font-size: 30px;
-    color: white;
-    gap: 20px;
-    font-family: 'Roboto', sans-serif;
-    flex-direction: column;
-    align-items: center; }
-    .card .subcard {
-      flex: 1;
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px; }
-      .card .subcard h4 {
-        font-size: 20px;
-        margin-bottom: 10px; }
-      .card .subcard p {
-        font-size: 15px;
-        margin: 0; } }
-
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .subt-index {
-    font-size: 30px;
-    padding: 8px;
-    margin-top: 30px; }
-  .cards {
-    font-size: 40px;
-    gap: 80px;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .card h4 {
-    font-size: 25px; }
-  .subcard {
-    width: 200px;
-    padding: 16px; }
-  .subcard h4 {
-    font-size: 18px; }
-  .subcard p {
-    font-size: 14px; } }
-
 /* (320px a 767px) */
 @media (min-width: 320px) and (max-width: 767px) {
   .subt-index {
@@ -645,17 +725,12 @@ p {
   .subcard p {
     font-size: 12px; } }
 
+/* Fuentes
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
 /*------------------------------------------media query footer------------------------------------------*/
-/* (1024px en adelante) */
-@media (min-width: 1024px) {
-  .footer-container {
-    margin-top: 100px; }
-  .footer-img {
-    gap: 15px; }
-  .footer-container button {
-    width: 240px;
-    padding: 10px; } }
-
 /* (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer-container {
@@ -669,27 +744,14 @@ p {
     padding: 8px; } }
 
 /* (hasta 767px) */
-@media (max-width: 767px) {
+@media (max-width: 320px) {
   .footer-container {
     margin-top: 60px;
     flex-direction: column;
-    align-items: center; }
-  .footer-img {
-    gap: 8px; }
-  .footer-container button {
-    width: 160px;
-    padding: 6px; } }
+    align-items: center;
+    gap: 20px; } }
 
 /*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
-/* (hasta 767px) */
-@media (max-width: 767px) {
-  .productos-container div {
-    margin: 15px; }
-  .productos-container h3 {
-    font-size: 18px; }
-  .productos-container img {
-    width: 150px; } }
-
 /* buscador lupa */
 @media screen and (max-width: 1024px) {
   .buscador {
@@ -704,34 +766,6 @@ p {
     width: 100%; } }
 
 /* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
-/* Media Query para dispositivos de 1024px o más */
-@media (min-width: 1024px) {
-  .subt-contac {
-    font-size: 40px; }
-  h4.contacto-subtitle {
-    font-size: 38px; }
-  .contacto-form .contacto-form__field .contacto-form__label {
-    font-size: 18px; }
-  .contacto-form .contacto-form__field .contacto-form__input {
-    font-size: 18px; }
-  .contacto-form .contacto-form__button {
-    font-size: 18px; } }
-
-/* Media Query para dispositivos de hasta 768px de ancho */
-@media (max-width: 768px) {
-  .contacto-container {
-    padding: 10px; }
-  .subt-contac {
-    font-size: 30px; }
-  h4.contacto-subtitle {
-    font-size: 28px; }
-  .contacto-form .contacto-form__field .contacto-form__label {
-    font-size: 14px; }
-  .contacto-form .contacto-form__field .contacto-form__input {
-    font-size: 14px; }
-  .contacto-form__button {
-    font-size: 16px; } }
-
 /* Media Query para dispositivos de hasta 480px de ancho */
 @media (max-width: 480px) {
   .subt-contac {
@@ -760,42 +794,6 @@ p {
     padding: 10px;
     margin: auto;
     align-items: center; } }
-
-/* Ajustes para pantallas con un ancho de 1024px o menos */
-@media screen and (max-width: 1024px) {
-  .nosotros-container {
-    padding: 10px; }
-  .nosotros-container h2 {
-    margin: 10px;
-    font-size: 26px; }
-  .nosotros-container p {
-    margin: 10px; }
-  .nosotros-container .novedades button {
-    width: 100%;
-    max-width: 300px;
-    padding: 15px;
-    font-size: 24px; } }
-
-/* Ajustes para pantallas con un ancho de 768px o menos */
-@media screen and (max-width: 768px) {
-  .nosotros-container h2 {
-    font-size: 28px; }
-  .nosotros-container p {
-    font-size: 24px; }
-  .nosotros-container button {
-    font-size: 24px;
-    width: autos; } }
-
-/* Ajustes para pantallas con un ancho de 480px o menos */
-@media screen and (max-width: 480px) {
-  .nosotros-container h2 {
-    font-size: 24px; }
-  .nosotros-container p {
-    font-size: 22px; }
-  .nosotros-container button {
-    width: auto;
-    font-size: 18px;
-    padding: 10px; } }
 
 /* Ajustes para pantallas con un ancho de 320px o menos */
 @media screen and (max-width: 320px) {
