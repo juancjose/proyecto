@@ -574,16 +574,13 @@ p {
 
 @media screen and (min-width: 1024px) {
   .nosotros-container {
-    padding: 10px; }
-  .nosotros-container h2 {
-    margin: 10px; }
+    margin-top: 10px; }
   .nosotros-container p {
-    margin: 10px; }
+    margin: 50px; }
   .nosotros-container .novedades button {
     width: 100%;
     max-width: 300px;
-    padding: 15px;
-    font-size: 24px; } }
+    padding: 15px; } }
 
 /*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 /* (768px a 1023px) */
@@ -736,8 +733,7 @@ p {
 /* Ajustes para pantallas con un ancho de 320px o menos */
 @media screen and (max-width: 320px) {
   .nosotros-container h2 {
-    font-size: 22px;
-    margin: 10px 5px; }
+    font-size: 22px; }
   .nosotros-container p {
     font-size: 20px;
     margin: 10px 5px; }

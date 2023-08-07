@@ -116,22 +116,17 @@
 
 @media screen and (min-width: 1024px) {
     .nosotros-container {
-        padding: 10px;
-    }
-
-    .nosotros-container h2 {
-        margin: 10px;
+    margin-top: 10px;
     }
 
     .nosotros-container p {
-        margin: 10px;
+        margin: 50px;
     }
 
     .nosotros-container .novedades button {
         width: 100%;
         max-width: 300px;
         padding: 15px;
-        font-size: 24px;
     }
 }
 
