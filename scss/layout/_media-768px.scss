@@ -60,19 +60,6 @@
     }
 }
 
-
-/*------------------------------------------media query footer------------------------------------------*/
-
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .footer-container {
-        margin-top: 80px;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 50px;
-    }
-}
-
 /*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
 
 /* (hasta 767px) */
@@ -137,3 +124,29 @@
     }
 }
 
+
+/* HTML - AYUDA*/
+
+
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 20px;
+        }
+    }
+
+/*------------------------------------------media query footer------------------------------------------*/
+
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}

@@ -87,3 +87,82 @@
     }
 }
 
+//--------------------------------------------------------NOSOTROS MEDIA QUERY-----------------------------------------------------------------//
+
+/* Ajustes para pantallas con un ancho de 320px o menos */
+@media screen and (max-width: 320px) {
+    .nosotros-container h2 {
+        font-size: 22px;
+        margin: 10px 5px;
+    }
+
+    .nosotros-container p {
+        font-size: 20px;
+        margin: 10px 5px;
+    }
+
+    .nosotros-container button {
+        width: 200px;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/* HTML - AYUDA Pantallas de 320px */
+
+    @media (max-width: 320px) {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 20px;
+        }
+    }
+
+
+/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
+
+/* Media Query para dispositivos de hasta 320px de ancho */
+@media (max-width: 320px) {
+    .subt-contac {
+        font-size: 24px;
+    }
+
+    h4.contacto-subtitle {
+        font-size: 12px;
+    }
+
+    .contacto-form {
+        .contacto-form__field {
+            .contacto-form__label {
+                font-size: 14px;
+            }
+
+            .contacto-form__input {
+                font-size: 14px;
+            }
+        }
+
+        .contacto-form__button {
+            font-size: 12px;
+            padding: 10px;
+            margin: auto;
+            align-items: center;
+        }
+    }
+}
+
+
+/*------------------------------------------media query footer------------------------------------------*/
+
+/* (hasta 320px) */
+@media (max-width: 320px){
+    .footer-container {
+        margin-top: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+}

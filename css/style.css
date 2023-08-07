@@ -624,15 +624,6 @@ p {
   .subcard p {
     font-size: 14px; } }
 
-/*------------------------------------------media query footer------------------------------------------*/
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer-container {
-    margin-top: 80px;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px; } }
-
 /*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
 /* (hasta 767px) */
 @media (max-width: 767px) {
@@ -668,6 +659,23 @@ p {
   .nosotros-container button {
     font-size: 24px;
     width: autos; } }
+
+/* HTML - AYUDA*/
+@media (max-width: 767px) {
+  h2 {
+    font-size: 40px; }
+  p {
+    font-size: 14px;
+    margin: 20px; } }
+
+/*------------------------------------------media query footer------------------------------------------*/
+/* (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; } }
 
 /*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 /* (hasta 767px a 320px) */
@@ -725,76 +733,6 @@ p {
   .subcard p {
     font-size: 12px; } }
 
-/* Fuentes
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
-/*------------------------------------------media query footer------------------------------------------*/
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer-container {
-    margin-top: 80px;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .footer-img {
-    gap: 10px; }
-  .footer-container button {
-    width: 200px;
-    padding: 8px; } }
-
-/* (hasta 767px) */
-@media (max-width: 320px) {
-  .footer-container {
-    margin-top: 60px;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; } }
-
-/*--------------------------------------------------------media query pagina productos-------------------------------------------------*/
-/* buscador lupa */
-@media screen and (max-width: 1024px) {
-  .buscador {
-    width: 90%; } }
-
-@media screen and (max-width: 768px) {
-  .buscador {
-    width: 100%; } }
-
-@media screen and (max-width: 576px) {
-  .buscador {
-    width: 100%; } }
-
-/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
-/* Media Query para dispositivos de hasta 480px de ancho */
-@media (max-width: 480px) {
-  .subt-contac {
-    font-size: 26px; }
-  h4.contacto-subtitle {
-    font-size: 24px; }
-  .contacto-form .contacto-form__field .contacto-form__label {
-    font-size: 12px; }
-  .contacto-form .contacto-form__field .contacto-form__input {
-    font-size: 12px; }
-  .contacto-form .contacto-form__button {
-    font-size: 14px; } }
-
-/* Media Query para dispositivos de hasta 320px de ancho */
-@media (max-width: 320px) {
-  .subt-contac {
-    font-size: 24px; }
-  h4.contacto-subtitle {
-    font-size: 12px; }
-  .contacto-form .contacto-form__field .contacto-form__label {
-    font-size: 10px; }
-  .contacto-form .contacto-form__field .contacto-form__input {
-    font-size: 10px; }
-  .contacto-form .contacto-form__button {
-    font-size: 12px;
-    padding: 10px;
-    margin: auto;
-    align-items: center; } }
-
 /* Ajustes para pantallas con un ancho de 320px o menos */
 @media screen and (max-width: 320px) {
   .nosotros-container h2 {
@@ -807,3 +745,43 @@ font-family: 'Montserrat', sans-serif;
     width: 200px;
     font-size: 20px;
     padding: 10px; } }
+
+/* HTML - AYUDA Pantallas de 320px */
+@media (max-width: 320px) {
+  h2 {
+    font-size: 28px; }
+  p {
+    font-size: 12px;
+    margin: 20px; } }
+
+/* -------------------------------------------------------------CONTACTO MEDIA QUERY---------------------------------------------------*/
+/* Media Query para dispositivos de hasta 320px de ancho */
+@media (max-width: 320px) {
+  .subt-contac {
+    font-size: 24px; }
+  h4.contacto-subtitle {
+    font-size: 12px; }
+  .contacto-form .contacto-form__field .contacto-form__label {
+    font-size: 14px; }
+  .contacto-form .contacto-form__field .contacto-form__input {
+    font-size: 14px; }
+  .contacto-form .contacto-form__button {
+    font-size: 12px;
+    padding: 10px;
+    margin: auto;
+    align-items: center; } }
+
+/*------------------------------------------media query footer------------------------------------------*/
+/* (hasta 320px) */
+@media (max-width: 320px) {
+  .footer-container {
+    margin-top: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; } }
+
+/* Fuentes
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
