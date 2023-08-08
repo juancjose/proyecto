@@ -64,8 +64,7 @@
 
 /*------------------------------------------media query footer------------------------------------------*/
 
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1023px) {
     .footer-container {
         margin-top: 80px;
         flex-wrap: wrap;

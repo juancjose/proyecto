@@ -249,7 +249,7 @@ h1 {
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease; }
       .productos-container div h3:hover {
-        background-color: #6200b363;
+        background-color: #000000a8;
         transform: scale(1.05); }
     .productos-container div img {
       width: 200px;
@@ -422,7 +422,8 @@ h1 {
   justify-content: space-around;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px; }
+  padding: 100px;
+  gap: 200px; }
   .footer-container .footer-img {
     display: flex;
     gap: 15px;
@@ -547,8 +548,7 @@ p {
         margin: 0; } }
 
 /*------------------------------------------media query footer------------------------------------------*/
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1023px) {
   .footer-container {
     margin-top: 80px;
     flex-wrap: wrap;
@@ -666,13 +666,13 @@ p {
     margin: 20px; } }
 
 /*------------------------------------------media query footer------------------------------------------*/
-/* (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 767px) {
   .footer-container {
     margin-top: 80px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; } }
+    gap: 50px;
+    padding: 40px; } }
 
 /*------------------------------------------media query h1 logos navbar en inicio--------------------------------------------------------*/
 /* (hasta 767px a 320px) */
@@ -774,7 +774,8 @@ p {
     margin-top: 60px;
     flex-wrap: wrap;
     align-items: center;
-    gap: 20px; } }
+    gap: 20px;
+    padding: 30px; } }
 
 /* Fuentes
 font-family: 'Josefin Sans', sans-serif;
