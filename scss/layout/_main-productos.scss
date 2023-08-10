@@ -1,53 +1,51 @@
-/*PRODUCTOS*/
+/*PRODUCTOS HTML*/
 
 .subt-productos {
     @extend .subt-index
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-.productos-container {
+h3 {
+    color: $colorfont-text;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #0000006e;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-    div {
-        display: flex;
-        flex-direction: column;
-        margin: 30px;
+.producto {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #0000009c;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 
-        h3 {
-            color: $colorfont-text;
-            font-size: 24px;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            padding: 10px;
-            background-color: #0000006e;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
 
-            &:hover {
-                background-color: #000000a8;
-                transform: scale(1.05);
-            }
-        }
+.producto:hover img {
+    transform: scale(1.1);
+}
 
-        img {
-            width: 200px;
-            border-radius: 10px;
-        }
-    }
+.descripcion {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
 }
