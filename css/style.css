@@ -610,7 +610,7 @@ p {
     font-size: 24px; }
   .nosotros-container button {
     font-size: 24px;
-    width: autos; } }
+    width: auto; } }
 
 /* HTML - AYUDA*/
 @media (max-width: 767px) {
