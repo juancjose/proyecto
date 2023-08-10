@@ -52,7 +52,7 @@ font-family: 'Montserrat', sans-serif;
           max-height: 20px; }
 
 /*DETALLE Y PRODUCTOS DEL INICO*/
-.subt-index {
+.subt-index, .subt-productos, .ayuda-container h2, .subt-contac, .subt-subli, .nosotros-container .subt-nosotros {
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -215,16 +215,6 @@ h1 {
             transform: scaleX(1); }
 
 /*PRODUCTOS*/
-.subt-productos {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
 @keyframes fadeIn {
   from {
     opacity: 0; }
@@ -261,16 +251,6 @@ h1 {
       border-radius: 10px; }
 
 /*HTML - AYUDA*/
-.ayuda-container h2 {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
 .ayuda-container p {
   color: white;
   text-align: left;
@@ -279,16 +259,6 @@ h1 {
   margin: 40px; }
 
 /* HTML - CONTACTO */
-.subt-contac {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -353,16 +323,6 @@ h1 {
     transform: scale(1.03); }
 
 /* HTML - SUBLIMACION */
-.subt-subli {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -469,16 +429,6 @@ body {
   background-attachment: fixed; }
 
 /* HTML - NOSOTROS */
-.nosotros-container .subt-nosotros {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  font-size: 40px; }
-
 p {
   text-align: center;
   margin: 60px;
@@ -607,7 +557,7 @@ p {
 /*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
 /* (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .subt-index {
+  .subt-index, .subt-productos, .ayuda-container h2, .subt-contac, .subt-subli, .nosotros-container .subt-nosotros {
     font-size: 30px;
     padding: 8px;
     margin-top: 30px; }
@@ -716,7 +666,7 @@ p {
 /*------------------------------------------media query h2 y cards del inicio--------------------------------------------------------*/
 /* (320px a 767px) */
 @media (min-width: 320px) and (max-width: 767px) {
-  .subt-index {
+  .subt-index, .subt-productos, .ayuda-container h2, .subt-contac, .subt-subli, .nosotros-container .subt-nosotros {
     font-size: 24px;
     padding: 6px;
     margin-top: 20px; }

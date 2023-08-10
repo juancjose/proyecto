@@ -2,14 +2,7 @@
 
 .ayuda-container {
     h2 {
-        color: $colorfont-h2;
-        text-align: center;
-        margin-top: 20px;
-        font-family: 'Montserrat', sans-serif;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        animation: fadeIn 1s forwards;
-        font-size: 40px;
+        @extend .subt-index
     }
 
     p {
