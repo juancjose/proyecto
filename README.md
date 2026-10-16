@@ -1,6 +1,6 @@
 # Imprenta Gráfica Espacio — Sitio web
 
-Sitio web institucional de **Gráfica Espacio**, empresa de servicios de impresión. Proyecto del curso de Desarrollo Web de Coderhouse.
+Sitio web institucional de **Gráfica Espacio**, empresa de servicios de impresión. Proyecto Coder - Desarrollo Web.
 
 🔗 **Demo:** https://iridescent-dasik-21987e.netlify.app/index.html
 
@@ -25,12 +25,8 @@ git clone https://github.com/juancjose/proyecto.git
 cd proyecto
 npm install
 npm run build-css    # compila scss/style.scss -> css/style.css
-# o: npm run watch-css  (recompila al guardar)
 ```
-Después abrí `index.html` en el navegador.
-
-## Capturas
-<!-- Agregá capturas del sitio, por ejemplo: ![Inicio](assets/img/captura-inicio.png) -->
+Abrí `index.html` en el navegador.
 
 ## Contacto de la imprenta
 - Teléfono: +54 9 11 3312-2743
