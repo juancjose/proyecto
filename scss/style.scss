@@ -4,26 +4,17 @@
 @import "./base/type";
 @import "./base/reset";
 
-@import "./layout/main-index";
-@import "./layout/main-header";
-@import "./layout/main-productos";
-@import "./layout/main-ayuda";
-@import "./layout/main-contacto";
-@import "./layout/main-sublimacion";
-@import "./layout/main-footer";
-@import "./layout/main-background";
-@import "./layout/main-nosotros";
+@import "./components/buttons";
+@import "./components/carousel";
 
-@import "./layout/media-1024px";
-@import "./layout/media-768px";
-@import "./layout/media-320px";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/page-hero";
 
-/* Fuentes
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
-
-
-
-
+@import "./pages/index";
+@import "./pages/productos";
+@import "./pages/ayuda";
+@import "./pages/contacto";
+@import "./pages/nosotros";
+@import "./pages/sublimacion";
+@import "./pages/masinfo";

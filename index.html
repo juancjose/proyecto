@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,165 +15,170 @@
     <meta property="og:url" content="https://iridescent-dasik-21987e.netlify.app/index.html">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
-<body>
-    <header>
-        <div class="logos">
-            <div class="logo">
-                <a href="https://Usuario" target="_blank">
-                    <img class="acceso" src="./assets/img/acceso.png" alt="login">
-                </a>
-                <a href="https://TusMegusta" target="_blank">
-                    <img class="mg" src="./assets/img/me-gusta.png" alt="mg">
-                </a>
-                <a href="https://CarritoDeCompras" target="_blank">
-                    <img class="carrito" src="./assets/img/carrito-de-compras.png" alt="carrito">
-                </a>
-            </div>
-        </div>
-        <h1>Gráfica Espacio</h1>
-        </div>
-        <button class="abrir-menu">ABRIR</button>
-        <nav>
-            <div class="navbar-container">
-            <ul class="navbar">
-                <li><a href="">Inicio</a></li>
+<body class="page-inicio">
+    <header class="site-header">
+        <div class="site-header__bar container">
+            <a class="brand" href="./index.html">
+                <img src="./assets/img/logo.png" alt="Gráfica Espacio" width="44" height="44">
+                <span>Gráfica Espacio</span>
+            </a>
+            <nav class="site-nav" id="menu" aria-label="Principal">
+                <ul class="site-nav__links">
+                <li><a href="./index.html" aria-current="page">Inicio</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/ayuda.html">Ayuda</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/sublimacion.html">Sublimacion</a></li>
                 <li><a href="./pages/masinfo.html">Info</a></li>
-                <li class="buscador">
-                    <input type="search" id="search" placeholder="Buscar...">
-                    <label for="search" class="lupa"><img src="./assets/img/lupa.png" alt="Buscar"></label>
-                </li>
-            </ul>
+                </ul>
+                <div class="site-nav__tools">
+                    <div class="buscador">
+                        <input type="search" id="search" placeholder="Buscar...">
+                        <label for="search" class="lupa"><img src="./assets/img/lupa.png" alt="Buscar"></label>
+                    </div>
+                    <div class="logos">
+                        <a href="https://Usuario" target="_blank"><img class="acceso" src="./assets/img/acceso.png" alt="login"></a>
+                        <a href="https://TusMegusta" target="_blank"><img class="mg" src="./assets/img/me-gusta.png" alt="mg"></a>
+                        <a href="https://CarritoDeCompras" target="_blank"><img class="carrito" src="./assets/img/carrito-de-compras.png" alt="carrito"></a>
+                    </div>
+                </div>
+            </nav>
+            <button class="abrir-menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        </nav>
     </header>
-    <!--INICIO DE MAIN -->
+
     <main>
-        <h2 class="subt-index">PRODUCTOS DESTACADOS</h2>
-        <div id="content-item-carrusel">
-            <div class="item-carrusel" id="item-carrusel1">
-                <div class="tarjeta-carrusel" id="tarjeta-carrusel1">
+        <section class="hero carousel" data-carousel aria-label="PRODUCTOS DESTACADOS">
+            <div class="carousel__track" id="content-item-carrusel">
+                <div class="carousel__slide is-active" id="item-carrusel1">
                     <img src="./assets/img/carrusel1.jpg" alt="img-carrusel1">
                 </div>
-                <div class="flechas-carrusel">
-                    <a href="#item-carrusel3">
-                        <i><img src="./assets/img/flecha-izquierda-black.png" alt="flecha-iz"></i>
-                    </a>
-                    <a href="#item-carrusel2">
-                        <i><img src="./assets/img/flecha-derecha-black.png" alt="flecha-der"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="item-carrusel" id="item-carrusel2">
-                <div class="tarjeta-carrusel" id="tarjeta-carrusel2">
+                <div class="carousel__slide" id="item-carrusel2">
                     <img src="./assets/img/carrusel2.jpg" alt="img-carrusel2">
                 </div>
-                <div class="flechas-carrusel">
-                    <a href="#item-carrusel1">
-                        <i><img src="./assets/img/flecha-izquierda-black.png" alt="flecha-iz"></i>
-                    </a>
-                    <a href="#item-carrusel3">
-                        <i><img src="./assets/img/flecha-derecha-black.png" alt="flecha-der"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="item-carrusel" id="item-carrusel3">
-                <div class="tarjeta-carrusel" id="tarjeta-carrusel3">
+                <div class="carousel__slide" id="item-carrusel3">
                     <img src="./assets/img/background1.jpg" alt="img-carrusel2">
                 </div>
-                <div class="flechas-carrusel">
-                    <a href="#item-carrusel2">
-                        <i><img src="./assets/img/flecha-izquierda-black.png" alt="flecha-iz"></i>
-                    </a>
-                    <a href="#item-carrusel4">
-                        <i><img src="./assets/img/flecha-derecha-black.png" alt="flecha-der"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="item-carrusel" id="item-carrusel4">
-                <div class="tarjeta-carrusel" id="tarjeta-carrusel4">
+                <div class="carousel__slide" id="item-carrusel4">
                     <img src="./assets/img/carrusel4.jpg" alt="img-carrusel4">
                 </div>
-                <div class="flechas-carrusel">
-                    <a href="#item-carrusel3">
-                        <i><img src="./assets/img/flecha-izquierda-black.png" alt="flecha-iz"></i>
-                    </a>
-                    <a href="#item-carrusel1">
-                        <i><img src="./assets/img/flecha-derecha-black.png" alt="flecha-der"></i>
-                    </a>
+            </div>
+            <div class="hero__content container">
+                <h1>Gráfica <em>Espacio</em></h1>
+                <p class="hero__lead">Grafica espacio es una empresa especializada en servicios de impresión de alta calidad. Ofrecemos una amplia gama de servicios de impresión, incluyendo impresión offset, impresión digital, impresión de gran formato y más.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="./pages/contacto.html">Solicitar presupuesto</a>
+                    <a class="btn btn--light" href="./pages/productos.html">Productos</a>
                 </div>
             </div>
-        </div>
-        <section class="cards">
-            <div class="card">
-                <h3>FACTURAS</h3>
-                <img class="img-inicio" src="./assets/img/facturas.png" alt="facturas-talonarios">
-                <div class="subcard">
+            <div class="carousel__controls container">
+                <button class="carousel__btn" type="button" data-prev aria-label="Anterior"><img src="./assets/img/flecha-izquierda-black.png" alt="flecha-iz"></button>
+                <span class="carousel__count" data-count>01 / 04</span>
+                <button class="carousel__btn" type="button" data-next aria-label="Siguiente"><img src="./assets/img/flecha-derecha-black.png" alt="flecha-der"></button>
+            </div>
+        </section>
+
+        <div class="marquee" aria-hidden="true"><div class="marquee__inner"><span>FACTURAS</span><span>TARJETAS</span><span>ALMANAQUES</span><span>FOLLETOS</span><span>GIGANTOGRAFIAS</span><span>CARTELES</span><span>ADHESIVOS</span><span>IMANES</span><span>FACTURAS</span><span>TARJETAS</span><span>ALMANAQUES</span><span>FOLLETOS</span><span>GIGANTOGRAFIAS</span><span>CARTELES</span><span>ADHESIVOS</span><span>IMANES</span></div></div>
+
+        <section class="section container">
+            <div class="section__head">
+                <h2 class="subt-index">PRODUCTOS DESTACADOS</h2>
+                <a class="link-arrow" href="./pages/productos.html">Productos</a>
+            </div>
+            <div class="features">
+                <a class="feature feature--1" href="./pages/productos.html">
+                    <img src="./assets/img/facturas.png" alt="facturas-talonarios">
+                    <h3>FACTURAS</h3>
+                </a>
+                <a class="feature feature--2" href="./pages/productos.html">
+                    <img src="./assets/img/tarjetas.png" alt="tarjeta">
+                    <h3>TARJETAS</h3>
+                </a>
+                <a class="feature feature--3" href="./pages/productos.html">
+                    <img src="./assets/img/etiquetas.png" alt="etiquetas-impresas">
+                    <h3>ETIQUETAS</h3>
+                </a>
+                <a class="feature feature--4" href="./pages/productos.html">
+                    <img src="./assets/img/folletos.png" alt="flyers">
+                    <h3>FOLLETOS</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="info-tiles container">
+                <div class="info-tile">
                     <img src="./assets/img/pago-con-tarjetas-de-credito.png" alt="carrito-de-compras">
                     <h4>TODAS LAS TARJETAS</h4>
                     <p>Credito, debito, mastercard y visa</p>
                 </div>
-            </div>
-            <div class="card">
-                <h3>TARJETAS</h3>
-                <img class="img-inicio" src="./assets/img/tarjetas.png" alt="tarjeta">
-                <div class="subcard">
+                <div class="info-tile">
                     <img src="./assets/img/whatsapp.png" alt="whatsapp-logo">
                     <h4>SOPORTE ONLINE</h4>
                     <p>Escribinos por whatsapp todas tus dudas</p>
                 </div>
-            </div>
-            <div class="card">
-                <h3>ETIQUETAS</h3>
-                <img class="img-inicio" src="./assets/img/etiquetas.png" alt="etiquetas-impresas">
-                <div class="subcard">
+                <div class="info-tile">
                     <img src="./assets/img/reloj.png" alt="reloj-logo">
                     <h4>NUESTROS HORARIOS</h4>
                     <p>Lunes a viernes de 8:00hs a 20:00hs</p>
                 </div>
-            </div>
-            <div class="card">
-                <h3>FOLLETOS</h3>
-                <img class="img-inicio" src="./assets/img/folletos.png" alt="flyers">
-                <div class="subcard">
+                <div class="info-tile">
                     <img src="./assets/img/ubicacion.png" alt="ubicacion-logo">
                     <h4>DONDE ESTAMOS</h4>
                     <p>San Isidro, Beccar Buenos Aires</p>
                 </div>
+        </section>
+
+        <section class="statement container">
+            <p class="statement__big">+20</p>
+            <div>
+                <p class="statement__text">Somos una imprenta gráfica con más de 20 años de experiencia en el mercado. Nuestra pasión por la impresión y el diseño nos ha llevado a ser reconocidos por la calidad de nuestros productos y servicios.</p>
+                <a class="btn btn--dark" href="./pages/nosotros.html">Nosotros</a>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-img">
-                <div class="footer-logo">
-                    <a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank">
-                        <img src="./assets/img/whatsapp.png" alt="WhatsApp Logo">
-                    </a>
+    <footer class="site-footer">
+        <div class="container">
+            <a class="site-footer__cta" href="./pages/contacto.html">
+                <span>Solicitar presupuesto</span>
+                <span class="site-footer__cta-icon"><img src="./assets/img/presupuesto.png" alt="presupuesto"></span>
+            </a>
+            <div class="site-footer__grid">
+                <div>
+                    <h5>Contacto</h5>
+                    <p><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank">WhatsApp: +54 9 11 3312-2743</a></p>
+                    <p><a href="mailto:graficaespacio@hotmail.com">Email: graficaespacio@hotmail.com</a></p>
                 </div>
-                <div class="footer-logo">
-                    <a href="https://twitter.com/TU_USUARIO_DE_TWITTER" target="_blank">
-                        <img src="./assets/img/twitter.png" alt="Twitter Logo">
-                    </a>
+                <div>
+                    <h5>Redes Sociales</h5>
+                    <ul class="redes">
+                        <li><a href="https://twitter.com/TU_USUARIO_DE_TWITTER" target="_blank"><img src="./assets/img/twitter.png" alt="Twitter Logo"></a></li>
+                        <li><a href="https://www.instagram.com/TU_USUARIO_DE_INSTAGRAM" target="_blank"><img src="./assets/img/instagram.png" alt="Instagram Logo"></a></li>
+                        <li><a href="https://www.facebook.com/TU_USUARIO_DE_FACEBOOK" target="_blank"><img src="./assets/img/facebook.png" alt="Facebook Logo"></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank"><img src="./assets/img/whatsapp.png" alt="WhatsApp Logo"></a></li>
+                    </ul>
                 </div>
-                <div class="footer-logo">
-                    <a href="https://www.instagram.com/TU_USUARIO_DE_INSTAGRAM" target="_blank">
-                        <img src="./assets/img/instagram.png" alt="Instagram Logo">
-                    </a>
+                <div>
+                    <h5>Dirección</h5>
+                    <p>Sucre, Beccar</p>
+                    <p>CP 1643</p>
+                </div>
+                <div>
+                    <h5>Nuestros horarios</h5>
+                    <p>Lunes a viernes de 8:00hs a 20:00hs</p>
                 </div>
             </div>
-            <div class="footer-button">
-                <a href="#">
-                    Solicitar presupuesto
-                    <span class="button-icon"><img src="./assets/img/presupuesto.png" alt="presupuesto"></span>
-                </a>
+            <div class="site-footer__bottom">
+                <p>&copy; 2023 Grafica Espacio. Todos los derechos reservados.</p>
+                <div class="cmyk-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             </div>
         </div>
     </footer>

@@ -1,0 +1,18 @@
+@mixin display($size, $stretch: 125%) {
+    font-family: $font-display;
+    font-weight: 800;
+    font-stretch: $stretch;
+    font-size: $size;
+    line-height: .92;
+    letter-spacing: -0.035em;
+}
+
+@mixin below($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin cmyk-gradient {
+    background: linear-gradient(90deg, $cyan 0 25%, $magenta 25% 50%, $yellow 50% 75%, $key 75% 100%);
+}

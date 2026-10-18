@@ -1,0 +1,118 @@
+.ayuda-container {
+    max-width: 1080px;
+}
+
+.faq {
+    border-top: 2px solid $ink;
+
+    &:last-child {
+        border-bottom: 2px solid $ink;
+    }
+
+    summary {
+        display: grid;
+        grid-template-columns: 64px 1fr 48px;
+        align-items: center;
+        gap: 16px;
+        padding: 28px 0;
+        cursor: pointer;
+        list-style: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &:hover .faq__q {
+            color: $magenta;
+        }
+    }
+
+    &__num {
+        font-family: $font-display;
+        font-weight: 700;
+        font-stretch: 110%;
+        color: $magenta;
+    }
+
+    &__q {
+        @include display(clamp(1.35rem, 2.8vw, 2.4rem), 112%);
+        line-height: 1.08;
+        transition: color .2s;
+    }
+
+    &__icon {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: $ink;
+        transition: background-color .2s, transform .3s $ease;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 16px;
+            height: 2px;
+            background: $white;
+            transform: translate(-50%, -50%);
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+            transition: transform .3s $ease;
+        }
+    }
+
+    &[open] &__icon {
+        background: $magenta;
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+    }
+
+    &__a {
+        padding: 0 64px 32px 80px;
+        font-size: 1.08rem;
+        color: $ink-soft;
+
+        ul {
+            display: grid;
+            gap: 10px;
+        }
+
+        li {
+            padding: 14px 18px;
+            background: $white;
+            border-radius: 12px;
+            border-left: 5px solid $cyan;
+
+            &:nth-child(4n+2) { border-left-color: $magenta; }
+            &:nth-child(4n+3) { border-left-color: $yellow; }
+            &:nth-child(4n+4) { border-left-color: $ink; }
+        }
+    }
+
+    @include below($bp-sm) {
+        summary {
+            grid-template-columns: 1fr 40px;
+            gap: 6px 14px;
+        }
+
+        &__num {
+            grid-column: 1 / -1;
+        }
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__a {
+            padding: 0 0 26px;
+        }
+    }
+}

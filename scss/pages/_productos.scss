@@ -1,0 +1,63 @@
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(28px, 3vw, 44px) 22px;
+
+    @include below($bp-lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include below($bp-sm) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px;
+    align-items: baseline;
+
+    &__img {
+        grid-column: 1 / -1;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        border-radius: $radius;
+        background: $white;
+        margin-bottom: 18px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s $ease;
+        }
+    }
+
+    &:nth-child(4n+1) &__img { box-shadow: inset 0 -6px 0 $cyan; }
+
+    &__num {
+        font-family: $font-display;
+        font-weight: 700;
+        font-stretch: 110%;
+        font-size: .85rem;
+        color: $magenta;
+    }
+
+    h3 {
+        @include display(clamp(1.4rem, 2vw, 1.9rem), 115%);
+        line-height: 1;
+        overflow-wrap: anywhere;
+    }
+
+    .descripcion {
+        grid-column: 1 / -1;
+        margin-top: 10px;
+        color: $ink-soft;
+        font-size: .98rem;
+    }
+
+    &:hover &__img img {
+        transform: scale(1.06);
+    }
+}

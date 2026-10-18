@@ -1,0 +1,120 @@
+.split {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    gap: clamp(24px, 6vw, 96px);
+    align-items: start;
+
+    @include below($bp-md) {
+        grid-template-columns: 1fr;
+    }
+
+    &__title {
+        @include display(clamp(2rem, 4.5vw, 4rem), 115%);
+        line-height: .98;
+        position: sticky;
+        top: calc(#{$header-h} + 32px);
+
+        @include below($bp-md) {
+            position: static;
+        }
+    }
+
+    &__body {
+        display: grid;
+        gap: 18px;
+        color: $ink-soft;
+        font-size: 1.08rem;
+
+        .lead {
+            font-family: $font-display;
+            font-stretch: 105%;
+            font-weight: 600;
+            font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+            line-height: 1.3;
+            color: $ink;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.servicios {
+    margin-top: clamp(64px, 9vw, 120px);
+    padding: clamp(56px, 8vw, 110px) 0;
+    background: $ink;
+    color: $white;
+
+    &__list li {
+        display: flex;
+        align-items: baseline;
+        gap: 24px;
+        padding: 22px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .18);
+        @include display(clamp(1.8rem, 4.6vw, 4.2rem), 118%);
+        line-height: 1.05;
+        transition: color .2s, padding-left .3s $ease;
+
+        &:first-child {
+            border-top: 1px solid rgba(255, 255, 255, .18);
+        }
+
+        span {
+            font-size: 1rem;
+            color: $yellow;
+        }
+
+        &:hover {
+            color: $cyan;
+            padding-left: 12px;
+        }
+    }
+}
+
+.ubicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    align-items: stretch;
+
+    @include below($bp-md) {
+        grid-template-columns: 1fr;
+    }
+
+    &__mapa {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .split__title {
+            position: static;
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            min-height: 380px;
+            border: 0;
+            border-radius: $radius;
+            background: $paper-2;
+        }
+    }
+}
+
+.mini-carousel {
+    min-height: 460px;
+    border-radius: $radius;
+    overflow: hidden;
+    background: $ink;
+
+    .carousel__track {
+        position: absolute;
+        inset: 0;
+    }
+
+    .carousel__controls {
+        position: absolute;
+        z-index: 2;
+        left: 20px;
+        bottom: 20px;
+        color: $white;
+    }
+}

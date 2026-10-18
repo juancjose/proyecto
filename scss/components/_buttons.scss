@@ -1,0 +1,82 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 56px;
+    padding: 0 30px;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform .25s $ease, background-color .2s, color .2s, border-color .2s;
+
+    &::after {
+        content: "→";
+        font-size: 1.15em;
+        transition: transform .25s $ease;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+
+        &::after {
+            transform: translateX(4px);
+        }
+    }
+
+    &:focus-visible {
+        outline: 3px solid $cyan;
+        outline-offset: 3px;
+    }
+
+    &--primary {
+        background: $magenta;
+        color: $white;
+
+        &:hover {
+            background: darken($magenta, 6%);
+        }
+    }
+
+    &--light {
+        background: transparent;
+        color: $white;
+        border-color: rgba(255, 255, 255, .7);
+
+        &:hover {
+            background: $white;
+            color: $ink;
+        }
+    }
+
+    &--dark {
+        background: $ink;
+        color: $white;
+
+        &:hover {
+            background: $magenta;
+        }
+    }
+}
+
+.link-arrow {
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid $ink;
+    padding-bottom: 2px;
+    white-space: nowrap;
+
+    &::after {
+        content: " →";
+    }
+
+    &:hover {
+        color: $magenta;
+        border-color: $magenta;
+    }
+}

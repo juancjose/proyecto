@@ -1,0 +1,331 @@
+// HERO a sangre con carrusel
+.hero {
+    position: relative;
+    height: calc(100vh - #{$header-h} - 5px);
+    min-height: 600px;
+    max-height: 960px;
+    color: $white;
+    overflow: hidden;
+
+    .carousel__track {
+        position: absolute;
+        inset: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background:
+                linear-gradient(90deg, rgba($ink, .88) 0%, rgba($ink, .55) 45%, rgba($ink, .1) 100%),
+                linear-gradient(0deg, rgba($ink, .6) 0%, transparent 40%);
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: clamp(110px, 14vh, 150px);
+
+        h1 {
+            @include display(clamp(3.6rem, 13vw, 12.5rem));
+            text-transform: uppercase;
+            animation: subir 1s $ease both;
+
+            em {
+                display: block;
+                font-style: normal;
+                color: transparent;
+                -webkit-text-stroke: 2px $white;
+            }
+        }
+    }
+
+    &__lead {
+        max-width: 560px;
+        margin-top: 28px;
+        font-size: clamp(1rem, 1.4vw, 1.2rem);
+        color: rgba(255, 255, 255, .88);
+        animation: subir 1s .15s $ease both;
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 32px;
+        animation: subir 1s .3s $ease both;
+    }
+
+    .carousel__controls {
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        right: 0;
+        bottom: 32px;
+        justify-content: flex-end;
+        color: $white;
+    }
+
+    @include below($bp-md) {
+        min-height: 640px;
+
+        .carousel__track::after {
+            background: linear-gradient(0deg, rgba($ink, .92) 0%, rgba($ink, .6) 55%, rgba($ink, .25) 100%);
+        }
+
+        .carousel__controls {
+            justify-content: flex-start;
+            bottom: 24px;
+        }
+
+        &__content {
+            padding-bottom: 104px;
+        }
+    }
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+// MARQUEE
+.marquee {
+    overflow: hidden;
+    background: $yellow;
+    border-block: 2px solid $ink;
+    padding: 18px 0;
+
+    &__inner {
+        display: flex;
+        width: max-content;
+        animation: marquee 32s linear infinite;
+    }
+
+    span {
+        @include display(clamp(1.6rem, 3.4vw, 2.8rem), 120%);
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 0 28px;
+        display: flex;
+        align-items: center;
+        gap: 56px;
+
+        &::after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: $ink;
+            margin-right: -28px;
+        }
+
+        &:nth-child(4n+1)::after { background: $cyan; }
+        &:nth-child(4n+2)::after { background: $magenta; }
+        &:nth-child(4n+3)::after { background: $white; }
+    }
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+// PRODUCTOS DESTACADOS
+.section__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: clamp(32px, 5vw, 56px);
+
+    @include below($bp-sm) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.subt-index {
+    @include display(clamp(2.1rem, 6.4vw, 6rem));
+    text-transform: uppercase;
+    max-width: 11ch;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(260px, 34vw));
+    max-height: none;
+    gap: 18px;
+
+    @media (min-width: 1360px) {
+        grid-template-rows: repeat(2, 440px);
+    }
+
+    @include below($bp-md) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        grid-auto-rows: 300px;
+    }
+
+    @include below($bp-sm) {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 320px;
+    }
+}
+
+.feature {
+    position: relative;
+    overflow: hidden;
+    border-radius: $radius;
+    background: $paper-2;
+    text-decoration: none;
+    color: $white;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 1s $ease;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba($ink, .75), transparent 55%);
+    }
+
+    h3 {
+        position: absolute;
+        z-index: 1;
+        left: 24px;
+        bottom: 20px;
+        @include display(clamp(1.6rem, 3vw, 2.8rem));
+    }
+
+    &:hover img {
+        transform: scale(1.06);
+    }
+
+    &--1 {
+        grid-row: span 2;
+    }
+
+    &--4 {
+        grid-column: span 2;
+    }
+
+    @include below($bp-md) {
+        &--1 {
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+    }
+
+    @include below($bp-sm) {
+        &--1,
+        &--4 {
+            grid-column: auto;
+        }
+    }
+}
+
+// INFO TILES (CMYK)
+.info-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+
+    @include below($bp-lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include below($bp-sm) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-tile {
+    min-height: 240px;
+    padding: 28px;
+    border-radius: $radius;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    background: $cyan;
+
+    &:nth-child(2) { background: $magenta; }
+
+    &:nth-child(3) {
+        background: $yellow;
+        color: $ink;
+
+        img { filter: invert(1); }
+    }
+
+    &:nth-child(4) { background: $ink; }
+
+    img {
+        width: 34px;
+        height: 34px;
+        margin-bottom: auto;
+    }
+
+    h4 {
+        margin-top: 40px;
+        @include display(1.35rem, 115%);
+        line-height: 1.05;
+    }
+
+    p {
+        margin-top: 8px;
+        opacity: .9;
+    }
+}
+
+// STATEMENT
+.statement {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: clamp(24px, 6vw, 96px);
+    padding-top: clamp(80px, 10vw, 140px);
+
+    &__big {
+        @include display(clamp(7rem, 22vw, 20rem), 125%);
+        line-height: .8;
+        background: linear-gradient(120deg, $cyan, $magenta 50%, $yellow);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__text {
+        font-family: $font-display;
+        font-stretch: 105%;
+        font-weight: 600;
+        font-size: clamp(1.3rem, 2.4vw, 2.1rem);
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+        margin-bottom: 28px;
+    }
+
+    @include below($bp-md) {
+        grid-template-columns: 1fr;
+    }
+}
