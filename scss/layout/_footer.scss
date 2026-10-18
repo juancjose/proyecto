@@ -1,7 +1,7 @@
 .site-footer {
     margin-top: clamp(80px, 10vw, 140px);
-    background: $ink;
-    color: $white;
+    background: $block;
+    color: $c-white;
     padding: clamp(56px, 8vw, 110px) 0 32px;
     position: relative;
 
@@ -41,6 +41,7 @@
         &:hover .site-footer__cta-icon {
             transform: rotate(-12deg) scale(1.05);
             background: $yellow;
+            color: $c-ink;
         }
     }
 
@@ -54,8 +55,13 @@
         background: $magenta;
         transition: transform .4s $ease, background-color .3s;
 
-        img {
-            width: 42%;
+        color: $c-white;
+        transition: transform .4s $ease, background-color .3s, color .3s;
+
+        .icon {
+            width: 40%;
+            height: 40%;
+            stroke-width: 1.6;
         }
     }
 
@@ -117,9 +123,25 @@
             }
         }
 
-        img {
-            width: 20px;
-            height: 20px;
+        color: $c-white;
+
+        .icon {
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    .con-icono {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 6px;
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+            color: rgba(255, 255, 255, .5);
         }
     }
 
@@ -147,6 +169,6 @@
         &:nth-child(1) { background: $cyan; }
         &:nth-child(2) { background: $magenta; }
         &:nth-child(3) { background: $yellow; }
-        &:nth-child(4) { background: $white; }
+        &:nth-child(4) { background: $c-white; }
     }
 }

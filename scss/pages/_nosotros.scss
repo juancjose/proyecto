@@ -19,7 +19,7 @@
 
     &__text {
         font-size: 1.1rem;
-        color: $ink-soft;
+        color: $fg-soft;
         padding-top: 24px;
         border-top: 6px solid $magenta;
     }
@@ -28,7 +28,7 @@
 .newsletter {
     margin-top: clamp(64px, 9vw, 120px);
     background: $magenta;
-    color: $white;
+    color: $c-white;
     position: relative;
     overflow: hidden;
 

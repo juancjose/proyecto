@@ -3,10 +3,10 @@
 }
 
 .faq {
-    border-top: 2px solid $ink;
+    border-top: 2px solid $fg;
 
     &:last-child {
-        border-bottom: 2px solid $ink;
+        border-bottom: 2px solid $fg;
     }
 
     summary {
@@ -45,7 +45,7 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: $ink;
+        background: $fg;
         transition: background-color .2s, transform .3s $ease;
 
         &::before,
@@ -56,7 +56,7 @@
             top: 50%;
             width: 16px;
             height: 2px;
-            background: $white;
+            background: $bg;
             transform: translate(-50%, -50%);
         }
 
@@ -77,7 +77,7 @@
     &__a {
         padding: 0 64px 32px 80px;
         font-size: 1.08rem;
-        color: $ink-soft;
+        color: $fg-soft;
 
         ul {
             display: grid;
@@ -86,13 +86,13 @@
 
         li {
             padding: 14px 18px;
-            background: $white;
+            background: $surface;
             border-radius: 12px;
             border-left: 5px solid $cyan;
 
             &:nth-child(4n+2) { border-left-color: $magenta; }
             &:nth-child(4n+3) { border-left-color: $yellow; }
-            &:nth-child(4n+4) { border-left-color: $ink; }
+            &:nth-child(4n+4) { border-left-color: $fg; }
         }
     }
 

@@ -4,12 +4,18 @@ $magenta: #e5007d;
 $yellow: #ffd500;
 $key: #0e0e0e;
 
-$paper: #f2efe8;
-$paper-2: #e8e3d8;
-$white: #ffffff;
-$ink: #0e0e0e;
-$ink-soft: #3a3a3a;
-$line: rgba(14, 14, 14, .14);
+// Colores fijos
+$c-ink: #0e0e0e;
+$c-white: #ffffff;
+
+// Colores de tema (CSS custom properties, ver base/_theme)
+$bg: var(--bg);
+$bg-2: var(--bg-2);
+$surface: var(--surface);
+$fg: var(--fg);
+$fg-soft: var(--fg-soft);
+$line: var(--line);
+$block: var(--block);
 
 $font-display: "Archivo", "Arial Black", system-ui, sans-serif;
 $font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -20,5 +26,6 @@ $radius: 22px;
 $ease: cubic-bezier(.2, .7, .2, 1);
 
 $bp-lg: 1100px;
+$bp-nav: 1279px;
 $bp-md: 820px;
 $bp-sm: 520px;

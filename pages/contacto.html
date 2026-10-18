@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://iridescent-dasik-21987e.netlify.app/index.html">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script>(function(){var t;try{t=localStorage.getItem('tema')}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)})();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/style.css">
@@ -39,15 +40,16 @@
                 <div class="site-nav__tools">
                     <div class="buscador">
                         <input type="search" id="search" placeholder="Buscar...">
-                        <label for="search" class="lupa"><img src="../assets/img/lupa.png" alt="Buscar"></label>
+                        <label for="search" class="lupa"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span class="sr-only">Buscar</span></label>
                     </div>
                     <div class="logos">
-                        <a href="https://Usuario" target="_blank"><img class="acceso" src="../assets/img/acceso.png" alt="login"></a>
-                        <a href="https://TusMegusta" target="_blank"><img class="mg" src="../assets/img/me-gusta.png" alt="mg"></a>
-                        <a href="https://CarritoDeCompras" target="_blank"><img class="carrito" src="../assets/img/carrito-de-compras.png" alt="carrito"></a>
+                        <a class="acceso" href="https://Usuario" target="_blank" aria-label="login"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg></a>
+                        <a class="mg" href="https://TusMegusta" target="_blank" aria-label="mg"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></a>
+                        <a class="carrito" href="https://CarritoDeCompras" target="_blank" aria-label="carrito"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></a>
                     </div>
                 </div>
             </nav>
+            <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false"><svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg><svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></button>
             <button class="abrir-menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
             </button>
@@ -65,10 +67,10 @@
                 <h4>¿Tenés dudas sobre algún producto en particular?</h4>
                 <p class="contacto-subtitle">Completá el formulario y un asesor de Grafica Espacio se contactará contigo</p>
                 <dl class="contacto__datos">
-                    <div><dt>WhatsApp</dt><dd><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank">+54 9 11 3312-2743</a></dd></div>
-                    <div><dt>Email</dt><dd><a href="mailto:graficaespacio@hotmail.com">graficaespacio@hotmail.com</a></dd></div>
-                    <div><dt>Dirección</dt><dd>Sucre, Beccar · CP 1643</dd></div>
-                    <div><dt>Nuestros horarios</dt><dd>Lunes a viernes de 8:00hs a 20:00hs</dd></div>
+                    <div><span class="contacto__icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span><dt>WhatsApp</dt><dd><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank">+54 9 11 3312-2743</a></dd></div>
+                    <div><span class="contacto__icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span><dt>Email</dt><dd><a href="mailto:graficaespacio@hotmail.com">graficaespacio@hotmail.com</a></dd></div>
+                    <div><span class="contacto__icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><dt>Dirección</dt><dd>Sucre, Beccar · CP 1643</dd></div>
+                    <div><span class="contacto__icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><dt>Nuestros horarios</dt><dd>Lunes a viernes de 8:00hs a 20:00hs</dd></div>
                 </dl>
             </div>
             <form class="contacto-form" action="/enviar_formulario_contacto.php" method="POST">
@@ -96,31 +98,30 @@
         <div class="container">
             <a class="site-footer__cta" href="./contacto.html">
                 <span>Solicitar presupuesto</span>
-                <span class="site-footer__cta-icon"><img src="../assets/img/presupuesto.png" alt="presupuesto"></span>
+                <span class="site-footer__cta-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span>
             </a>
             <div class="site-footer__grid">
                 <div>
                     <h5>Contacto</h5>
-                    <p><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank">WhatsApp: +54 9 11 3312-2743</a></p>
-                    <p><a href="mailto:graficaespacio@hotmail.com">Email: graficaespacio@hotmail.com</a></p>
+                    <p class="con-icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank">WhatsApp: +54 9 11 3312-2743</a></p>
+                    <p class="con-icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:graficaespacio@hotmail.com">Email: graficaespacio@hotmail.com</a></p>
                 </div>
                 <div>
                     <h5>Redes Sociales</h5>
                     <ul class="redes">
-                        <li><a href="https://twitter.com/TU_USUARIO_DE_TWITTER" target="_blank"><img src="../assets/img/twitter.png" alt="Twitter Logo"></a></li>
-                        <li><a href="https://www.instagram.com/TU_USUARIO_DE_INSTAGRAM" target="_blank"><img src="../assets/img/instagram.png" alt="Instagram Logo"></a></li>
-                        <li><a href="https://www.facebook.com/TU_USUARIO_DE_FACEBOOK" target="_blank"><img src="../assets/img/facebook.png" alt="Facebook Logo"></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank"><img src="../assets/img/whatsapp.png" alt="WhatsApp Logo"></a></li>
+                        <li><a href="https://twitter.com/TU_USUARIO_DE_TWITTER" target="_blank" aria-label="Twitter"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></li>
+                        <li><a href="https://www.instagram.com/TU_USUARIO_DE_INSTAGRAM" target="_blank" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
+                        <li><a href="https://www.facebook.com/TU_USUARIO_DE_FACEBOOK" target="_blank" aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=1133122743" target="_blank" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a></li>
                     </ul>
                 </div>
                 <div>
                     <h5>Dirección</h5>
-                    <p>Sucre, Beccar</p>
-                    <p>CP 1643</p>
+                    <p class="con-icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Sucre, Beccar<br>CP 1643</span></p>
                 </div>
                 <div>
                     <h5>Nuestros horarios</h5>
-                    <p>Lunes a viernes de 8:00hs a 20:00hs</p>
+                    <p class="con-icono"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Lunes a viernes de 8:00hs a 20:00hs</span></p>
                 </div>
             </div>
             <div class="site-footer__bottom">

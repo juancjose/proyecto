@@ -4,7 +4,7 @@
     height: calc(100vh - #{$header-h} - 5px);
     min-height: 600px;
     max-height: 960px;
-    color: $white;
+    color: $c-white;
     overflow: hidden;
 
     .carousel__track {
@@ -17,8 +17,8 @@
             inset: 0;
             z-index: 2;
             background:
-                linear-gradient(90deg, rgba($ink, .88) 0%, rgba($ink, .55) 45%, rgba($ink, .1) 100%),
-                linear-gradient(0deg, rgba($ink, .6) 0%, transparent 40%);
+                linear-gradient(90deg, rgba($c-ink, .88) 0%, rgba($c-ink, .55) 45%, rgba($c-ink, .1) 100%),
+                linear-gradient(0deg, rgba($c-ink, .6) 0%, transparent 40%);
         }
     }
 
@@ -40,7 +40,7 @@
                 display: block;
                 font-style: normal;
                 color: transparent;
-                -webkit-text-stroke: 2px $white;
+                -webkit-text-stroke: 2px $c-white;
             }
         }
     }
@@ -68,14 +68,14 @@
         right: 0;
         bottom: 32px;
         justify-content: flex-end;
-        color: $white;
+        color: $c-white;
     }
 
     @include below($bp-md) {
         min-height: 640px;
 
         .carousel__track::after {
-            background: linear-gradient(0deg, rgba($ink, .92) 0%, rgba($ink, .6) 55%, rgba($ink, .25) 100%);
+            background: linear-gradient(0deg, rgba($c-ink, .92) 0%, rgba($c-ink, .6) 55%, rgba($c-ink, .25) 100%);
         }
 
         .carousel__controls {
@@ -105,7 +105,7 @@
 .marquee {
     overflow: hidden;
     background: $yellow;
-    border-block: 2px solid $ink;
+    border-block: 2px solid $c-ink;
     padding: 18px 0;
 
     &__inner {
@@ -128,13 +128,13 @@
             width: 18px;
             height: 18px;
             border-radius: 50%;
-            background: $ink;
+            background: $c-ink;
             margin-right: -28px;
         }
 
         &:nth-child(4n+1)::after { background: $cyan; }
         &:nth-child(4n+2)::after { background: $magenta; }
-        &:nth-child(4n+3)::after { background: $white; }
+        &:nth-child(4n+3)::after { background: $c-white; }
     }
 }
 
@@ -191,9 +191,9 @@
     position: relative;
     overflow: hidden;
     border-radius: $radius;
-    background: $paper-2;
+    background: $bg-2;
     text-decoration: none;
-    color: $white;
+    color: $c-white;
 
     img {
         width: 100%;
@@ -206,7 +206,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(0deg, rgba($ink, .75), transparent 55%);
+        background: linear-gradient(0deg, rgba($c-ink, .75), transparent 55%);
     }
 
     h3 {
@@ -266,24 +266,34 @@
     border-radius: $radius;
     display: flex;
     flex-direction: column;
-    color: $white;
+    color: $c-white;
     background: $cyan;
 
     &:nth-child(2) { background: $magenta; }
 
     &:nth-child(3) {
         background: $yellow;
-        color: $ink;
+        color: $c-ink;
 
-        img { filter: invert(1); }
+        .info-tile__icon { background: rgba(0, 0, 0, .08); }
     }
 
-    &:nth-child(4) { background: $ink; }
+    &:nth-child(4) { background: $block; }
 
-    img {
-        width: 34px;
-        height: 34px;
+    &__icon {
+        display: grid;
+        place-items: center;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .18);
         margin-bottom: auto;
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            stroke-width: 1.8;
+        }
     }
 
     h4 {

@@ -2,8 +2,8 @@
     position: relative;
     overflow: hidden;
     padding: clamp(72px, 12vw, 160px) 0 clamp(40px, 6vw, 72px);
-    background: $ink;
-    color: $white;
+    background: $block;
+    color: $c-white;
 
     &::after {
         content: "";

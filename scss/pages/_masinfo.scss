@@ -22,7 +22,7 @@
     &__body {
         display: grid;
         gap: 18px;
-        color: $ink-soft;
+        color: $fg-soft;
         font-size: 1.08rem;
 
         .lead {
@@ -31,7 +31,7 @@
             font-weight: 600;
             font-size: clamp(1.3rem, 2.2vw, 1.9rem);
             line-height: 1.3;
-            color: $ink;
+            color: $fg;
             margin-bottom: 10px;
         }
     }
@@ -40,8 +40,8 @@
 .servicios {
     margin-top: clamp(64px, 9vw, 120px);
     padding: clamp(56px, 8vw, 110px) 0;
-    background: $ink;
-    color: $white;
+    background: $block;
+    color: $c-white;
 
     &__list li {
         display: flex;
@@ -94,7 +94,7 @@
             min-height: 380px;
             border: 0;
             border-radius: $radius;
-            background: $paper-2;
+            background: $bg-2;
         }
     }
 }
@@ -103,7 +103,7 @@
     min-height: 460px;
     border-radius: $radius;
     overflow: hidden;
-    background: $ink;
+    background: $block;
 
     .carousel__track {
         position: absolute;
@@ -115,6 +115,6 @@
         z-index: 2;
         left: 20px;
         bottom: 20px;
-        color: $white;
+        color: $c-white;
     }
 }

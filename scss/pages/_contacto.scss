@@ -17,7 +17,7 @@
         .contacto-subtitle {
             margin-top: 18px;
             font-size: 1.15rem;
-            color: $ink-soft;
+            color: $fg-soft;
         }
     }
 
@@ -27,8 +27,17 @@
         gap: 0;
 
         div {
+            display: grid;
+            grid-template-columns: 46px 1fr;
+            column-gap: 16px;
+            align-items: center;
             padding: 18px 0;
             border-top: 1.5px solid $line;
+
+            &:nth-child(1) .contacto__icono { background: $cyan; }
+            &:nth-child(2) .contacto__icono { background: $magenta; }
+            &:nth-child(3) .contacto__icono { background: $yellow; color: $c-ink; }
+            &:nth-child(4) .contacto__icono { background: $fg; color: $bg; }
         }
 
         dt {
@@ -37,6 +46,11 @@
             letter-spacing: .12em;
             text-transform: uppercase;
             color: $magenta;
+        }
+
+        dt,
+        dd {
+            grid-column: 2;
         }
 
         dd {
@@ -59,7 +73,7 @@
 }
 
 .contacto-form {
-    background: $white;
+    background: $surface;
     border-radius: $radius;
     padding: clamp(28px, 4vw, 52px);
     box-shadow: 14px 14px 0 $cyan;
@@ -83,10 +97,10 @@
         padding: 0 2px;
         font: inherit;
         font-size: 1.1rem;
-        color: $ink;
+        color: $fg;
         background: transparent;
         border: 0;
-        border-bottom: 2px solid $ink;
+        border-bottom: 2px solid $fg;
         border-radius: 0;
         outline: none;
         transition: border-color .2s;
@@ -105,5 +119,20 @@
 
     @include below($bp-sm) {
         box-shadow: 8px 8px 0 $cyan;
+    }
+}
+
+.contacto__icono {
+    grid-row: span 2;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: $c-white;
+
+    .icon {
+        width: 20px;
+        height: 20px;
     }
 }

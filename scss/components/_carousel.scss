@@ -39,13 +39,15 @@
         height: 54px;
         border: 0;
         border-radius: 50%;
-        background: $white;
+        background: $c-white;
         cursor: pointer;
         transition: transform .2s $ease, background-color .2s;
 
-        img {
-            width: 18px;
-            height: 18px;
+        color: $c-ink;
+
+        .icon {
+            width: 22px;
+            height: 22px;
         }
 
         &:hover {

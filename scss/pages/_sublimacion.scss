@@ -28,7 +28,7 @@
     position: relative;
     overflow: hidden;
     border-radius: $radius;
-    background: $paper-2;
+    background: $bg-2;
 
     img {
         width: 100%;
@@ -41,7 +41,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(0deg, rgba($ink, .7), transparent 50%);
+        background: linear-gradient(0deg, rgba($c-ink, .7), transparent 50%);
     }
 
     &:hover img {
@@ -54,7 +54,7 @@
         left: 22px;
         right: 22px;
         bottom: 18px;
-        color: $white;
+        color: $c-white;
         @include display(clamp(1.4rem, 2.4vw, 2.4rem), 115%);
         line-height: 1;
 

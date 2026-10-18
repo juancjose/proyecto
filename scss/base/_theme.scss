@@ -1,0 +1,142 @@
+:root,
+[data-theme="light"] {
+    --bg: #f2efe8;
+    --bg-2: #e8e3d8;
+    --surface: #ffffff;
+    --fg: #0e0e0e;
+    --fg-soft: #3a3a3a;
+    --line: rgba(14, 14, 14, .14);
+    --block: #0e0e0e;
+    --block-line: transparent;
+    --header-bg: rgba(242, 239, 232, .86);
+    color-scheme: light;
+}
+
+[data-theme="dark"] {
+    --bg: #111215;
+    --bg-2: #1c1e23;
+    --surface: #1b1d22;
+    --fg: #f2efe8;
+    --fg-soft: #b6b1a6;
+    --line: rgba(242, 239, 232, .14);
+    --block: #08090b;
+    --block-line: rgba(242, 239, 232, .1);
+    --header-bg: rgba(17, 18, 21, .82);
+    color-scheme: dark;
+}
+
+body {
+    transition: background-color .35s ease, color .35s ease;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    flex: none;
+    display: block;
+}
+
+// Botón de tema
+.theme-toggle {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1.5px solid $line;
+    border-radius: 50%;
+    background: $surface;
+    color: $fg;
+    cursor: pointer;
+    transition: transform .3s $ease, background-color .2s, border-color .2s;
+
+    .icon {
+        grid-area: 1 / 1;
+        transition: opacity .3s, transform .4s $ease;
+    }
+
+    .icon--sun {
+        opacity: 0;
+        transform: rotate(-90deg) scale(.6);
+    }
+
+    &:hover {
+        border-color: $fg;
+        transform: rotate(12deg);
+    }
+
+    &:focus-visible {
+        outline: 3px solid $cyan;
+        outline-offset: 3px;
+    }
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: $yellow;
+
+    .icon--moon {
+        opacity: 0;
+        transform: rotate(90deg) scale(.6);
+    }
+
+    .icon--sun {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+// Ajustes de modo oscuro
+[data-theme="dark"] {
+    .page-hero,
+    .site-footer,
+    .servicios {
+        border-top: 1px solid var(--block-line);
+    }
+
+    .info-tile:nth-child(4) {
+        border: 1px solid var(--block-line);
+    }
+
+    .page-hero::after,
+    .page-hero::before {
+        opacity: .75;
+    }
+
+    .contacto-form {
+        border: 1px solid var(--line);
+    }
+
+    .brand img {
+        background: #f2efe8;
+    }
+}
+
+// Scroll reveal
+@keyframes revelar {
+    from {
+        opacity: 0;
+        translate: 0 34px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+.js-reveal .reveal {
+    opacity: 0;
+}
+
+.js-reveal .reveal.is-visible {
+    animation: revelar .9s $ease var(--d, 0ms) both;
+}

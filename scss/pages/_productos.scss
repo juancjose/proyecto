@@ -23,7 +23,7 @@
         aspect-ratio: 4 / 5;
         overflow: hidden;
         border-radius: $radius;
-        background: $white;
+        background: $c-white;
         margin-bottom: 18px;
 
         img {
@@ -53,7 +53,7 @@
     .descripcion {
         grid-column: 1 / -1;
         margin-top: 10px;
-        color: $ink-soft;
+        color: $fg-soft;
         font-size: .98rem;
     }
 
