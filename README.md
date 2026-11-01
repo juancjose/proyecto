@@ -1,4 +1,15 @@
-# Imprenta Gráfica Espacio — Sitio web
+<!-- jnce-header -->
+# Coderhouse · Proyecto final
+
+> Coderhouse · Proyecto final — Desarrollo Web
+
+**🌐 Sitio online:** [iridescent-dasik-21987e.netlify.app](https://iridescent-dasik-21987e.netlify.app/)  
+**🛠️ Tecnologías:** HTML · CSS · JavaScript  
+**👤 Diseño y desarrollo:** [Juan José Cáceres](https://juancjose.github.io/jnce-studio/)
+
+![Vista previa de Coderhouse · Proyecto final](docs/preview.jpg)
+
+---
 
 Sitio web institucional de **Gráfica Espacio**, empresa de servicios de impresión. Proyecto Coder - Desarrollo Web.
 
